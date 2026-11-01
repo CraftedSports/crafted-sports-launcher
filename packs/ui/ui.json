@@ -1,0 +1,1378 @@
+{
+ "version": "2481509f08ac4a43",
+ "appVersion": "1.2.1",
+ "time": 1793566539211,
+ "base": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/b7d76cfb915e491aaaa6d4a1094174f951f74fe6/",
+ "files": [
+  {
+   "path": "ui/app.js",
+   "sha256": "db51766d71d037c61aecfca723486a6c26032596991f876f536baed7606a101a",
+   "size": 69108
+  },
+  {
+   "path": "ui/armour.js",
+   "sha256": "d928454424fe26c6887bf3915b939e9ae3d8b64295bad2878f9908367cf7b908",
+   "size": 10839
+  },
+  {
+   "path": "ui/cpl-kits.js",
+   "sha256": "e81600864ff9b8066ca826965aece5a576dc9a1244033c2875eade629747ab7d",
+   "size": 1909
+  },
+  {
+   "path": "ui/gear.js",
+   "sha256": "b38c0b6323f0e051c5964a6fc9d8d4b7c78be26d5944dfd4233d2c242ca3c06c",
+   "size": 17163
+  },
+  {
+   "path": "ui/helmet.js",
+   "sha256": "72eabcaa69ba4a34dd98c45642211507f6cbf78dbd91ba3f1ada9e3165a45b5f",
+   "size": 13751
+  },
+  {
+   "path": "ui/index.html",
+   "sha256": "b242904a0557c2fcb278748b729318849221bfc6852dfa3091a02668a04fecb3",
+   "size": 11815
+  },
+  {
+   "path": "ui/mask.js",
+   "sha256": "adfe44bcb7578dac818186852a4edcb7937174d860defdc91aeb204ff72f06af",
+   "size": 3997
+  },
+  {
+   "path": "ui/masks-data.js",
+   "sha256": "2796caa6533afdbea12404c5a3c2bbbc6948ef62b8ae69ff2bbeb78894db7217",
+   "size": 19231
+  },
+  {
+   "path": "ui/rig-data.js",
+   "sha256": "6e28aa33c50563febf93816670ccb1ef1dc5f5fb29df952ae6ac511028548827",
+   "size": 96085
+  },
+  {
+   "path": "ui/rig.js",
+   "sha256": "a8ea46b2961c8522b45cd81b0d43643fd1c69a09cd53a1ebc56d73659e2b34cc",
+   "size": 22349
+  },
+  {
+   "path": "ui/soccer-locker.js",
+   "sha256": "1785be0a965e70ff91569db0f492d7c713cff9c905a528b7541863a517a195dd",
+   "size": 45626
+  },
+  {
+   "path": "ui/style.css",
+   "sha256": "d90a542a47f6f5bb20dcc72d9ae02269355c9918ac677421a40438063d46c0e7",
+   "size": 50313
+  },
+  {
+   "path": "ui/vendor/skinview3d.bundle.js",
+   "sha256": "a40e39bb2a47f7f371f9bbf17dd4719433f585a48066073e2d85c4bef971bd28",
+   "size": 470371
+  },
+  {
+   "path": "assets/chaclient/blockers/mauer.png",
+   "sha256": "adeaadaa5b062b6ed042630a0ff305d089a25235604f9c30afed26a13fbe3952",
+   "size": 8757
+  },
+  {
+   "path": "assets/chaclient/gloves/black.png",
+   "sha256": "17cf57478a30d6fd363cbe7a36cc93455a581e55201fdc41c4bdd85f87b248eb",
+   "size": 6556
+  },
+  {
+   "path": "assets/chaclient/gloves/blue.png",
+   "sha256": "8f01d83ccc07f36e4b784e02afce30fe1759a92765b36c2961e310aac0e829cf",
+   "size": 6577
+  },
+  {
+   "path": "assets/chaclient/gloves/cancer.png",
+   "sha256": "3bd246d589c749e5b6af8260125086cfa7e8be44f4c847dd013ce7796b41e7e8",
+   "size": 7158
+  },
+  {
+   "path": "assets/chaclient/gloves/cyan.png",
+   "sha256": "76694279bb89263d035f7002ab121c3f48ab9ded9dfe1d4d2f44b0dba983691f",
+   "size": 6609
+  },
+  {
+   "path": "assets/chaclient/gloves/dark_red.png",
+   "sha256": "10b5d285ef20948d166c33e92c0a847ed17fc8b54f48eb4b7972ffb57557eaa6",
+   "size": 6577
+  },
+  {
+   "path": "assets/chaclient/gloves/dark_tan.png",
+   "sha256": "b60846ce73e302a541b439fb7d2e9c831ce26f11b3949f78fc3b681bb068dd93",
+   "size": 6588
+  },
+  {
+   "path": "assets/chaclient/gloves/father.png",
+   "sha256": "5f167fc1f4f83d86dd644a9bab3b507280824a122d3d84bdce99226813a26495",
+   "size": 6591
+  },
+  {
+   "path": "assets/chaclient/gloves/gold.png",
+   "sha256": "9d18209abe2094a8ef5f2d8ae6b5402721ec6da9ceb19d1fbea5db09fcddbaac",
+   "size": 6654
+  },
+  {
+   "path": "assets/chaclient/gloves/green.png",
+   "sha256": "376f105ea4323c99568ad702fb741cae03c1fef6f0c12fb372836f20b294830a",
+   "size": 6573
+  },
+  {
+   "path": "assets/chaclient/gloves/indigo.png",
+   "sha256": "7e5c33e1b7061ccd7fe7d778f07037b4dcfbae465c43e9e440621a4ea0f32e89",
+   "size": 6592
+  },
+  {
+   "path": "assets/chaclient/gloves/light_blue.png",
+   "sha256": "9e4ba3a7b916049f7a7329f9427395c78fcdea8be01fd1c53b46c4b3329e777c",
+   "size": 6623
+  },
+  {
+   "path": "assets/chaclient/gloves/lime.png",
+   "sha256": "0c6807cf11ede756c3f4de86e9e104136175e1be29661a4fcd281967205d7192",
+   "size": 6602
+  },
+  {
+   "path": "assets/chaclient/gloves/magenta.png",
+   "sha256": "3271480056ebdde8d332d5cce3b762fd7551d5f609666cee500d940b06939ef7",
+   "size": 6580
+  },
+  {
+   "path": "assets/chaclient/gloves/maroon.png",
+   "sha256": "39cc3075cd585b88b2016708ae4e2d305a9d8df331d0e7403d501c3a1fb9c2f7",
+   "size": 6632
+  },
+  {
+   "path": "assets/chaclient/gloves/mother.png",
+   "sha256": "5a196daeae6511d9bdca54cd451356e60136bbfeccaacc6307c6a7525fdf9f2c",
+   "size": 6654
+  },
+  {
+   "path": "assets/chaclient/gloves/orange.png",
+   "sha256": "693b6a59e901798beb9bef1193ed362f5098406bd11e3a0a46639d05453271b2",
+   "size": 6600
+  },
+  {
+   "path": "assets/chaclient/gloves/pink.png",
+   "sha256": "f2817d4fc48953c3bf0fdb59367f46937da96f227a4cfc098c3f9845e7fdbe3e",
+   "size": 6583
+  },
+  {
+   "path": "assets/chaclient/gloves/puck.png",
+   "sha256": "0e38b419c4b613284d9f3100ab643beefd49f8454faac50d19d2eebd3f967fab",
+   "size": 6252
+  },
+  {
+   "path": "assets/chaclient/gloves/red.png",
+   "sha256": "590b933e96b32d2de9d5fb6df5b11dfaf7a667deec8ef1759c526adcb5dd1609",
+   "size": 6602
+  },
+  {
+   "path": "assets/chaclient/gloves/vintage.png",
+   "sha256": "68bca04dab0a67e3a2b3fd77eed1c83d4020a411a60199ff62f1c4a7324dcf92",
+   "size": 6633
+  },
+  {
+   "path": "assets/chaclient/gloves/violet.png",
+   "sha256": "927d5cd181121c19ef957fd1d28f4ff044f21f7140d89b8159135fae48c3724a",
+   "size": 6565
+  },
+  {
+   "path": "assets/chaclient/gloves/white.png",
+   "sha256": "9373d509575f421249e64a6d685f38bed3da3572f6339d51873620991ab5d0a6",
+   "size": 6630
+  },
+  {
+   "path": "assets/chaclient/gloves/yellow.png",
+   "sha256": "19ec82a629452090ec95e6f9f3ffa701aa1f34ab731e2499dec9247c3f837d3b",
+   "size": 6632
+  },
+  {
+   "path": "assets/chaclient/mirror_visor.png",
+   "sha256": "927285b97f9ff4eae76cca923ca9c678811a6dc96f121f1b30cd8aafb82c71b7",
+   "size": 10648
+  },
+  {
+   "path": "assets/chaclient/pads/color_black.png",
+   "sha256": "d1a42aacc32dd8ab0fb20fb891aacbae45def2cef8f2a6f326c6689452fb2288",
+   "size": 27061
+  },
+  {
+   "path": "assets/chaclient/pads/color_blue.png",
+   "sha256": "7677e17979252c9cab2675a61eb4147e03135af2a304bf09bbb9759225de0141",
+   "size": 29576
+  },
+  {
+   "path": "assets/chaclient/pads/color_brown.png",
+   "sha256": "43ec8cf96053c3f78abf11e61205d0cff8ca83181e35e6f3b5342cbe1da08768",
+   "size": 29247
+  },
+  {
+   "path": "assets/chaclient/pads/color_cyan.png",
+   "sha256": "fef9d6e65b0da98055d575d86978c37f2d80c71abeff8511e631b52807933ddf",
+   "size": 29583
+  },
+  {
+   "path": "assets/chaclient/pads/color_gray.png",
+   "sha256": "b556781e879d253b0b242bdee78474884c2fdb78304fed42184ae0d3e24815f7",
+   "size": 28626
+  },
+  {
+   "path": "assets/chaclient/pads/color_green.png",
+   "sha256": "811a4ca3944887a432b65b592bd625b7b27fff4f4eabb4959c30a474db7b0e50",
+   "size": 29275
+  },
+  {
+   "path": "assets/chaclient/pads/color_light_blue.png",
+   "sha256": "a124a2e7f75939ea961419c66f8f0c22f532de95b8d169777537cdcc336a1bda",
+   "size": 30474
+  },
+  {
+   "path": "assets/chaclient/pads/color_light_gray.png",
+   "sha256": "ee0e4d6499f6652f39a831c335e8071f8110ce8e3e9fb02121574baeb5e5ee2d",
+   "size": 29017
+  },
+  {
+   "path": "assets/chaclient/pads/color_lime.png",
+   "sha256": "5f1b98ad52b6564b27b0742d8299c4517e988fbe3d585451b84435c7bd316a9b",
+   "size": 30117
+  },
+  {
+   "path": "assets/chaclient/pads/color_magenta.png",
+   "sha256": "e161cd1e4cfca3986b1bebbe42a4a4a4ac1c0d7e81e879cd839e690558782064",
+   "size": 30394
+  },
+  {
+   "path": "assets/chaclient/pads/color_orange.png",
+   "sha256": "b324a2f61f45685d7a641ac88612b372ec9ad1e930dbf58487cf660b0e3d4331",
+   "size": 30070
+  },
+  {
+   "path": "assets/chaclient/pads/color_pink.png",
+   "sha256": "9d0b146dda895b183c21da0a547d75336136514e77571cc6dcba92dc63b7ba0d",
+   "size": 30331
+  },
+  {
+   "path": "assets/chaclient/pads/color_purple.png",
+   "sha256": "284fba3bde8f291fae2e418ccc85ed00467fa05dafd6ea77827cc20a18ab50ba",
+   "size": 30333
+  },
+  {
+   "path": "assets/chaclient/pads/color_red.png",
+   "sha256": "2ef172a546a47603770b99bb61d8c7d0d43d10180004748760a50dfbe78abfd1",
+   "size": 29385
+  },
+  {
+   "path": "assets/chaclient/pads/color_yellow.png",
+   "sha256": "00c25b891f850c6859d0def35f900226248dee136ddaf527c3003425f00fc2bb",
+   "size": 30160
+  },
+  {
+   "path": "assets/chaclient/pads/default.png",
+   "sha256": "6e0955881d7f18d364c712e2abbcdfaed4cdb621aa8550f08327b7f0a8738e84",
+   "size": 29400
+  },
+  {
+   "path": "assets/chaclient/pads/pass_aurora.png",
+   "sha256": "23e5cd6fd7a307d9a32d4db3eec836e083691d815bf9defea672dbd1691dfaab",
+   "size": 16560
+  },
+  {
+   "path": "assets/chaclient/pads/pass_circuit.png",
+   "sha256": "82f08493a81d50a5392bb8ae65e06db55e116a8a128431a9edd5908ca006872f",
+   "size": 15674
+  },
+  {
+   "path": "assets/chaclient/pads/pass_crafted_gold.png",
+   "sha256": "4a8445b8316de010bb3abbb6b60cc43c07a651abff44d715ff6d3ace17e70118",
+   "size": 16750
+  },
+  {
+   "path": "assets/chaclient/pads/pass_ember.png",
+   "sha256": "370698a8cdb59b06f8fa384d779b1c9a25dc1c3b48280ea20b7edbc4accf1457",
+   "size": 17150
+  },
+  {
+   "path": "assets/chaclient/pads/pass_glacier.png",
+   "sha256": "7713737e57f1a15a80ca5d7162aee982d61c0cfe4ac59cdfb0c74584fd880cf9",
+   "size": 15614
+  },
+  {
+   "path": "assets/chaclient/pads/retro.png",
+   "sha256": "6c8e19ed0005b1db3b2c7b3d148e6322c6ef7430283064e64877cc44cdaddccd",
+   "size": 32832
+  },
+  {
+   "path": "assets/chaclient/pads.png",
+   "sha256": "288046a3b172528e6a86a064695680190e3107d6f3bbd9aabffc22f22ee63652",
+   "size": 5974
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/aurora.png",
+   "sha256": "a70216e23f376d14762ab2aeaf2382a001940201ce7e905f798889c6f5533b0e",
+   "size": 11425
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/bone.png",
+   "sha256": "58db3a6b0a10211b2ddb5d7e80b09b78ba39326bb25de35aa6038ab324e24079",
+   "size": 10743
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/browncow.png",
+   "sha256": "b3a49ee068abe1b6b81bbb24415ad5b706c63bac716100dcb13fab4c413d70e3",
+   "size": 15740
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/canada.png",
+   "sha256": "26a744e564626135af6e1880e53f58009368aa087d5923e07a4e115257efea96",
+   "size": 8367
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/circuit.png",
+   "sha256": "0b6a46ab313903a9d02b065c32de8cbf71ae82bdf42a54fa163eaafce052cced",
+   "size": 10391
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/cow.png",
+   "sha256": "9254a07d05a3ff4bcaa77620244ab945a46b7f247bf3eb6dba7335dbad29d4b9",
+   "size": 16615
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/crafted_gold.png",
+   "sha256": "5c099a21da015be90bf83a5c949cd710065dc3fa63bb27a556fdf23b13c92200",
+   "size": 10555
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/czech.png",
+   "sha256": "faeb04c460cffc27829ab91e39d4a014339d4a9d475967ba72b22f2f050ce1aa",
+   "size": 7502
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/ember.png",
+   "sha256": "5bb7233a060543840817f2e4e6defaaaea7e29fd6fdcfafa29319625535841ee",
+   "size": 11541
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/finland.png",
+   "sha256": "62cbdb1da20c832d119e854a73e9a3fa308834a30cdbbb45fce5a3b2ef252e53",
+   "size": 11446
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/frostbite.png",
+   "sha256": "b349bebc3585b4ef720bc6e263c2649fb55b3888af5426cf7912f010423af3d8",
+   "size": 10602
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/germany.png",
+   "sha256": "28b659002a7e6fe74ef3f722e34ebe68ea4858680fff7236f87267915c07e048",
+   "size": 9359
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/lightning.png",
+   "sha256": "233744d4dc3ef0ab2d0654cf1f51854b0ac5bb9cee96ac56a531e59abe6c9581",
+   "size": 7005
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/mauer.png",
+   "sha256": "9454e04d9d4baa2dc09725cf309e3e2126bde88c54b74f6555e574cea53b020e",
+   "size": 6281
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/mherwood.png",
+   "sha256": "64071d196473b5fe4d3cec6f773fe71049b558624ea4fce664001d712ddc789b",
+   "size": 6345
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/pumpkin.png",
+   "sha256": "c287019d35f08de4a741325bb32926594e6208ff2d0d0687e076c3df16dc970d",
+   "size": 11949
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/pumpkin_purple.png",
+   "sha256": "fe6884a3459f2362d9aa7844eeae84ed2550e459cbaf1f0b575e590a87402404",
+   "size": 11770
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/pumpkin_red.png",
+   "sha256": "4ff06fff012168c7549a76cba666e81adedfd337180501baa389e18e0f0a05f2",
+   "size": 11624
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/retro.png",
+   "sha256": "442bdfd46a694b02145471bd1468672c86e8e2fcdc6bd0f75b153eae3e0a54a9",
+   "size": 10280
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/russia.png",
+   "sha256": "d6380f5dba43af66b66d2db6b3e8208658e28da57f315e5d8f4e16b1439f953f",
+   "size": 9372
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/slime.png",
+   "sha256": "1348f02761f83cb94f049f0664ae5e5a5b03c6ffc220dc319b0ba9890a2aa64b",
+   "size": 8661
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/sweden.png",
+   "sha256": "fe6d9191d2852f29d4385b1b5acf14d24c55dc29b809701ccb643bcf6db6c447",
+   "size": 8479
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/swiss.png",
+   "sha256": "ca312f3d17ab2edb6839f42332f2abb8b31c4c5a3934be528e70f19e6ecb2da3",
+   "size": 9834
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/usa.png",
+   "sha256": "176b4f905cd3df6d521f226d50c551d608f956df88bb54f0f40677caa1256112",
+   "size": 7698
+  },
+  {
+   "path": "assets/chaclient/sticks/goalie/witchbroom.png",
+   "sha256": "6d32071e6d9ece302ab440068803fb828663c84ce9d019bf6acde14fa7e3d0f1",
+   "size": 13166
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/aurora.png",
+   "sha256": "59c61df78d66f4e28e6eb72b352c2203a086dfb00b3d5a6cadac9a81562b15ee",
+   "size": 10225
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/birdo.png",
+   "sha256": "1b7e869fa7466dc3ddcfca33e9668e0f90204b29adf04963793f40fbaece529f",
+   "size": 51723
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/bone.png",
+   "sha256": "457d9c76e19873457cc1e837e28a71f35a1f7a5b64493c4281409155e01dffb9",
+   "size": 10332
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/bronze.png",
+   "sha256": "ad010f5ee8b229260a71a0b5839a576375b84e028e36ca36e49dff1fd752ba9a",
+   "size": 14650
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/browncow.png",
+   "sha256": "608b608598b6b99c4d167ef48cd0ccf732ba132d858a10a6991e6548be911e7a",
+   "size": 12647
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/canada.png",
+   "sha256": "565a44bf8ba9691f28db99348dcadb6204be43f5f972aef8140f4fd92cfa9a37",
+   "size": 7618
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/chameleon.png",
+   "sha256": "faba7c7f5fdb0119ee3e83dc02945a50066be663f0949bc9df856b783d53b453",
+   "size": 6201
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/chicken.png",
+   "sha256": "6cc75f67e196c5e78fc1f40c6d73eb89812764b8b015f09c4bce74f53695e247",
+   "size": 52907
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/circuit.png",
+   "sha256": "5d3225471f202cdfd1b4717792f58b9c721da6dc6c396323f3f6979ccabb2859",
+   "size": 9482
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/cow.png",
+   "sha256": "68fa6fdf2271d138ab4d7cf527fbcbe3a42587aade203edb270506702ea0698e",
+   "size": 13025
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/crafted_gold.png",
+   "sha256": "2914b5b974130b7eaa3013a9a9ad279916e088bea5a55171e3ea2b88bbafd27c",
+   "size": 9601
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/czech.png",
+   "sha256": "96222454558c5a108cdad16a679562bf34d78ceabf01f5f1c49250ef25fe0d3d",
+   "size": 7270
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/darkmatter.png",
+   "sha256": "23a5e25d0bdc7c7466afb3e3fcb52caf784df0bb9c7fc1079f98fd98d593af9f",
+   "size": 7562
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/ember.png",
+   "sha256": "b8db8a3ef2f5cd8e62d8e4619737e8fc934ff30a449b8c92ac6677136884b68a",
+   "size": 10311
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/festive.png",
+   "sha256": "75f5ae8ea3e47f4c3748591023eceebdf22fd8838bb43589721ce89b59d78a96",
+   "size": 6245
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/finland.png",
+   "sha256": "4c32a32fff5dc96ea56b5270b4cd7711e512c60cd7287e41ae08d61a99088416",
+   "size": 9741
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/flower.png",
+   "sha256": "4b766e214390e6c8d178a83e90d397c4a32e42356b9a9fad94c3ef3538782ea6",
+   "size": 11473
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/frostbite.png",
+   "sha256": "eff1a15e4ffb0ab1fdbebe0f37cf758886bd8ebc949f0d2183b0ec12e41247bb",
+   "size": 9586
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/geekbob.png",
+   "sha256": "4262d33b8637548e78f25ef50bf7f7e203792a18dddcebcdcb1b15c486a957ba",
+   "size": 17269
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/germany.png",
+   "sha256": "7ae79932b3fb9d3a9e5a0c99fab0fc6ffc492ff988ec06b648eadab8f71f69d0",
+   "size": 8449
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/gold.png",
+   "sha256": "87001d601b0d13f5305207b88c3f83d5409e92abaabcb2252f58cad01f9a47fd",
+   "size": 9971
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/lightning.png",
+   "sha256": "56712dc97a2831779a219fb93a0b708e16e1e94f054792cc90ebbf630d0359f4",
+   "size": 7725
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/mauer.png",
+   "sha256": "a4818410493702835b60e4a82e199a4406701b0c93034f6338f55b4e22d2f03d",
+   "size": 6174
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/mherwood.png",
+   "sha256": "74f5e70e789594529108aac4f8391d471547e066ce87f337064527c973027dab",
+   "size": 6237
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/pumpkin.png",
+   "sha256": "8b77f481e7d3284ae9b6fbb52332b4c234424e0d56632cec020a05f478764e76",
+   "size": 11164
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/pumpkin_purple.png",
+   "sha256": "db1319782bf666654889a678e3255ad16bc5b8d68ae5fcfbb5b468e04bb0ded8",
+   "size": 10952
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/pumpkin_red.png",
+   "sha256": "75bf77e80878c0b378749cb56d7a31ba77b54889a18c5a83e1e06b5a589924bc",
+   "size": 10845
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/retro.png",
+   "sha256": "7017fc84331483756145e7d708bc75d85e2d44dc42787aa16f31aa71d52d9fa2",
+   "size": 9535
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/russia.png",
+   "sha256": "dfe946f1a6540e1536c6f9f4df4618a37aac8005fa454aab87cc28cb32cad602",
+   "size": 8206
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/scythe.png",
+   "sha256": "ee9b07372aba443e9ad3abc0c067ce6c383a914b4856c1b631468ac1c6736bd6",
+   "size": 34244
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/silver.png",
+   "sha256": "e7e2eee1894b23139205da5ef9f294db61818e706493cb1c9919a8e21926e387",
+   "size": 9471
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/slime.png",
+   "sha256": "699da505986f16da4d66b0589dc3550ac6f4895a636b16022bdbc9780fe66258",
+   "size": 8362
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/sweden.png",
+   "sha256": "8dc5972d0cf2f29c59430d29bac19caa0f7c13beaca00f9828d0928b44f7684e",
+   "size": 7569
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/swiss.png",
+   "sha256": "2fa43dfcc47fe0a4ab2f2e2aafb00e802d23454a26c4d9e88e158d891aefd37c",
+   "size": 9823
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/usa.png",
+   "sha256": "532fe74cdf971b2e165a027749f147a0d36c9a9835c55427ba0ee69fa8851644",
+   "size": 7586
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/winter.png",
+   "sha256": "d0590463b85734903b066910bf5315f24d4993d2d54d7416b329143d9b5bf33d",
+   "size": 6228
+  },
+  {
+   "path": "assets/chaclient/sticks/skater/witchbroom.png",
+   "sha256": "37590b720a1bb5f9620cc6d739a836ac524a32b2df2890c58fb3ae7700067cd1",
+   "size": 12453
+  },
+  {
+   "path": "assets/cosmetics/masks/bearmask.png",
+   "sha256": "81a1b650d41a752ea9b6eeb9b4480352fced953cebb63f2c6f3b2da29b2a1448",
+   "size": 37079
+  },
+  {
+   "path": "assets/cosmetics/masks/canadamask.png",
+   "sha256": "ff0d9f5ff97b1258f880bdde200676ea11ff3c69b203868c5b59af7d09bdefcb",
+   "size": 27358
+  },
+  {
+   "path": "assets/cosmetics/masks/cookiemask1.png",
+   "sha256": "f4dad05d1ab6b33114c8936e4336f11a546cca474d3da9ee0359397e04d2d841",
+   "size": 43330
+  },
+  {
+   "path": "assets/cosmetics/masks/index.json",
+   "sha256": "563427780c04449c1d75c5a9f7c599f887d699a4fa6fe2f49dea4864eeca616f",
+   "size": 23066
+  },
+  {
+   "path": "assets/cosmetics/masks/irlmask.png",
+   "sha256": "932f6ebc7e4ee9e64fa412dba6a462cc8981fb9bce6a7745f61cf0ca7f739ae1",
+   "size": 60953
+  },
+  {
+   "path": "assets/cosmetics/masks/menacemask.png",
+   "sha256": "22bd54d4e251ee3c53bd6bc67caf42e59d47e64d342118fbc998c9c1618f1a1c",
+   "size": 88310
+  },
+  {
+   "path": "assets/cosmetics/masks/pinesmask.png",
+   "sha256": "a8927e61c634501a5ec46e95046217203827468cd2030ac078df6b5230e5fb93",
+   "size": 61505
+  },
+  {
+   "path": "assets/cosmetics/masks/sealsmask.png",
+   "sha256": "00fc053f1ddc46e6277367de8fa61bc8c9dbe9a121df49828bcdb889c730785b",
+   "size": 41051
+  },
+  {
+   "path": "assets/cosmetics/masks/steelmask.png",
+   "sha256": "0e0bf0a732a18a7b37df1d2d7119d5f99c7e78838533c93ad785e0d7f7cf8615",
+   "size": 50556
+  },
+  {
+   "path": "assets/fonts/Inter-Black.otf",
+   "sha256": "1dc81aa64047bfb4246ece435105ec85944f575744d6d850ab7a287fe6b640e7",
+   "size": 619772
+  },
+  {
+   "path": "assets/fonts/Inter-Bold.otf",
+   "sha256": "00fd6f4691ee8884a33b46bf45851b341927c37c30064f558e1befb242971c49",
+   "size": 626056
+  },
+  {
+   "path": "assets/fonts/Inter-Medium.otf",
+   "sha256": "1e65171fccd6f445b7742728454620ec2867356c849af78e71bf2c4f0e3d97ba",
+   "size": 622088
+  },
+  {
+   "path": "assets/fonts/Oswald.ttf",
+   "sha256": "5b38c246e255a12f5712d640d56bcced0472466fc68983d2d0410ec0457c2817",
+   "size": 172088
+  },
+  {
+   "path": "assets/icon-128.png",
+   "sha256": "4492035304008075779ecf9dfadfd0e3991925cfa19d7d8522f905750c087a95",
+   "size": 16128
+  },
+  {
+   "path": "assets/icon.png",
+   "sha256": "862de07ffd9450bb19bfab93948ca9ee13f431f1144d0e4ea3e79e2cc69629be",
+   "size": 64940
+  },
+  {
+   "path": "assets/kits/cpl/au_away.png",
+   "sha256": "5c59faa71650066e2b4cd1f3258ea9c38e559e099f777d492e13eba2ee8b1bd5",
+   "size": 193848
+  },
+  {
+   "path": "assets/kits/cpl/au_home.png",
+   "sha256": "c1ab9e5ec386d03de0a06f328e5ec86a9a591f5f781267d9b470042ce76fa7b9",
+   "size": 527313
+  },
+  {
+   "path": "assets/kits/cpl/au_keeper.png",
+   "sha256": "1cea4a77d4a7edc4f366e10f0b091af5178feb9dfffe3fc987b9eddd25a3fa10",
+   "size": 225548
+  },
+  {
+   "path": "assets/kits/cpl/blu_away.png",
+   "sha256": "deb53aabfd1f60e32dd3712eeb34980481dd7881790a2af7cbc9b45c69c59e91",
+   "size": 143510
+  },
+  {
+   "path": "assets/kits/cpl/blu_home.png",
+   "sha256": "ade09120d6487f6735bbf1138600853ecba34ac4487f390494cbce50328ec6b3",
+   "size": 133890
+  },
+  {
+   "path": "assets/kits/cpl/blu_keeper.png",
+   "sha256": "4abd63118a8e54c12a49252face56e5ca6826081613ee3c645053d5acd680b60",
+   "size": 155038
+  },
+  {
+   "path": "assets/kits/cpl/cfc_away.png",
+   "sha256": "fabbf6fae86facd30b41e0a2c00bbca66165c337cb1886037346e0ff8a2587b4",
+   "size": 150930
+  },
+  {
+   "path": "assets/kits/cpl/cfc_home.png",
+   "sha256": "c74c951b0ae925d4169fb19e54d00e5590e6dc29574a2b2554c24ed5ede4a22f",
+   "size": 145571
+  },
+  {
+   "path": "assets/kits/cpl/cfc_keeper.png",
+   "sha256": "118747074177674fbfe3a9567f60c8e02d5ea28561a84fab885b3bfc75d3a173",
+   "size": 150701
+  },
+  {
+   "path": "assets/kits/cpl/digits.png",
+   "sha256": "6499e1613767232884701be107feac2197b319a3077388b7aa09b77a3ba1ef1a",
+   "size": 20356
+  },
+  {
+   "path": "assets/kits/cpl/digits_au.png",
+   "sha256": "8e6f15bd7b1e34ba4deeeadc9f3ee294953003d9c4cdb8de0856670e83f46726",
+   "size": 17670
+  },
+  {
+   "path": "assets/kits/cpl/dufc_away.png",
+   "sha256": "2d613f9cbc5f6187edb7acd2a8e495adafe79fa0429a2cb5ecf9866d76d06f65",
+   "size": 144368
+  },
+  {
+   "path": "assets/kits/cpl/dufc_home.png",
+   "sha256": "cd31025279cde15afcef6c58ba4dad12d3444e280fbafee364d6d0306d90e3e8",
+   "size": 164443
+  },
+  {
+   "path": "assets/kits/cpl/dufc_keeper.png",
+   "sha256": "689c108f27eaaad1c9dd6406bb795119c426043c09d2c1a060dcc579ca1b0f48",
+   "size": 240435
+  },
+  {
+   "path": "assets/kits/cpl/kits.json",
+   "sha256": "5647f9a90cd3accc6713a75b20208f81d8d884b79f6c36b82819a158b238a39e",
+   "size": 2175
+  },
+  {
+   "path": "assets/kits/cpl/kob_away.png",
+   "sha256": "630de3aeadd7b82330697416ef5b603cbb6f9a2c7714f560a5dcfbee649739c5",
+   "size": 300878
+  },
+  {
+   "path": "assets/kits/cpl/kob_home.png",
+   "sha256": "a5c79377080a172cb906b094df2e1581fffbe065a4b8ec8d7ee90d391e144dde",
+   "size": 377751
+  },
+  {
+   "path": "assets/kits/cpl/kob_keeper.png",
+   "sha256": "9b1f16cb213cbcdc9a8ca70ef1c0766c9fb54a8f475e76785d90eb9f7cee5933",
+   "size": 470988
+  },
+  {
+   "path": "assets/kits/cpl/stfc_away.png",
+   "sha256": "85ac325b5e37f46d428da727baed86904025be6aa0989c0a272a23429ad6643b",
+   "size": 115008
+  },
+  {
+   "path": "assets/kits/cpl/stfc_home.png",
+   "sha256": "a023dd92fa82d54890f0b473051e2d121e5ba52cca3f95a6ca77898b80216303",
+   "size": 99804
+  },
+  {
+   "path": "assets/kits/cpl/stfc_keeper.png",
+   "sha256": "d7e9827560f9b32c327ce57f3ada4c309f589e47478d0e9fbe4d3872209abd8f",
+   "size": 142252
+  },
+  {
+   "path": "assets/kits/cpl/tm2_away.png",
+   "sha256": "d46faff9a06d83c649f0f6861db61eaa3ffcdcf401cc09a706227cc507c30222",
+   "size": 141614
+  },
+  {
+   "path": "assets/kits/cpl/tm2_home.png",
+   "sha256": "ab4a1a3d678fe8664829c30dc1ed881a8a2eb864d777644756fdd5741d33e1a8",
+   "size": 131294
+  },
+  {
+   "path": "assets/kits/cpl/tm2_keeper.png",
+   "sha256": "a5487a7d1f61a8bff0ca59425d927b9e3009135e281810710a4370e0604add60",
+   "size": 155038
+  },
+  {
+   "path": "assets/kits/cpl/tm3_away.png",
+   "sha256": "b46a146d6538a9b0016fa31b14ca2bdce642f709a1acb3534e9b14112bcbd310",
+   "size": 145642
+  },
+  {
+   "path": "assets/kits/cpl/tm3_home.png",
+   "sha256": "de0a922e1b7be5e418538315175e14957d1883fd7009c26550e48b3061e37dc3",
+   "size": 136586
+  },
+  {
+   "path": "assets/kits/cpl/tm3_keeper.png",
+   "sha256": "0ee343b06d8bc37698aab1cf9a088433a063273f4ea9af40b1b2a37b40fe8f08",
+   "size": 150701
+  },
+  {
+   "path": "assets/kits/cpl/tm4_away.png",
+   "sha256": "7b598ca1a81e81cd8e2b09428e4ab98729040b3078cf602f63382f739a8d7b72",
+   "size": 153823
+  },
+  {
+   "path": "assets/kits/cpl/tm4_home.png",
+   "sha256": "4978df069cdb7a9755ff3e00b62026c6df14448714859f67a5322739ce071cfb",
+   "size": 148884
+  },
+  {
+   "path": "assets/kits/cpl/tm4_keeper.png",
+   "sha256": "e71009495cefafdb98143f6a9ac7cf39ac05f69d6033fecd73380f7d37154046",
+   "size": 155038
+  },
+  {
+   "path": "assets/kits/cpl/wfc_away.png",
+   "sha256": "675afc0bcddc55450193a9165fb83a3dbe00ebb2970420724077f62f8add11e4",
+   "size": 152045
+  },
+  {
+   "path": "assets/kits/cpl/wfc_home.png",
+   "sha256": "fd132fc5c9b49848715a5ce471b2697b3efa65fe4e444193b8224b4f8acf4e81",
+   "size": 134617
+  },
+  {
+   "path": "assets/kits/cpl/wfc_keeper.png",
+   "sha256": "0b24e9833a33aafae6324b540b7a8c171f32300ba23644d82ffa2cda4fe660a3",
+   "size": 178585
+  },
+  {
+   "path": "assets/kits/cpl/whfc_away.png",
+   "sha256": "a8ddd0879c0050989e8341c590b1637516dcef0130f64210d86eeb1f2e0a9b6e",
+   "size": 143125
+  },
+  {
+   "path": "assets/kits/cpl/whfc_home.png",
+   "sha256": "ba0cdc4a7fedb7cf7b59add29c18809c2b793f89ce152d7ad2f4cebd8afc15ea",
+   "size": 134422
+  },
+  {
+   "path": "assets/kits/cpl/whfc_keeper.png",
+   "sha256": "7e73425f79695217696d8e0c5c3a54a233c8ca02c94993cef6386cf12bd72e73",
+   "size": 152784
+  },
+  {
+   "path": "assets/kits/hockey/menace_away.png",
+   "sha256": "271880165008a490eaabf00640c8f61a33a877ce8d823d8a743c11f532e038b5",
+   "size": 13817
+  },
+  {
+   "path": "assets/kits/hockey/menace_away_socks.png",
+   "sha256": "9242e07ed985bb2b057cf6ad4e6906c40e8f0b69e30bb4d59b46b2856999b8d9",
+   "size": 7330
+  },
+  {
+   "path": "assets/kits/hockey/menace_home.png",
+   "sha256": "e9486a422079c918cc485c5a7482a7ac46c3c32c10456192db981d7a722026fd",
+   "size": 13071
+  },
+  {
+   "path": "assets/kits/hockey/menace_home_socks.png",
+   "sha256": "ea8a9cf358c8e668e8c42616b57e3e535fe870b8796f14796e4f9cdd88e2a08b",
+   "size": 7017
+  },
+  {
+   "path": "assets/kits/hockey/pines_alt.png",
+   "sha256": "fe646d5775192fa562b068c7ff07f1b3f8462749443709b32a42aa0575f7c2f4",
+   "size": 15382
+  },
+  {
+   "path": "assets/kits/hockey/pines_alt_socks.png",
+   "sha256": "3e5d3116c40e27f20933964f9ddc72017eb209ac50ad3779e3869a938552ed0f",
+   "size": 9630
+  },
+  {
+   "path": "assets/kits/hockey/pines_away.png",
+   "sha256": "a29cef3882ee9394c1f416b62d600250b3cd27b7bfae39a5857191fc9acac22b",
+   "size": 15166
+  },
+  {
+   "path": "assets/kits/hockey/pines_away_socks.png",
+   "sha256": "1c1c0d246e10b2648d01971f007f12a67c3de0d9edbc48e8070e953818a255db",
+   "size": 9733
+  },
+  {
+   "path": "assets/kits/hockey/pines_home.png",
+   "sha256": "c81e387d63713a39880118a2757cee706010fa2d7c29db3a131e6417c7857f14",
+   "size": 16103
+  },
+  {
+   "path": "assets/kits/hockey/pines_home_socks.png",
+   "sha256": "6e60af553160e2390e19858358f8e68896556806d51785e7a5d407ea7df76986",
+   "size": 9700
+  },
+  {
+   "path": "assets/kits/hockey/qbc_alt.png",
+   "sha256": "903a979499531426970abb907a362b5b4afe906b4b1004e98565f1e4c9ee6feb",
+   "size": 19017
+  },
+  {
+   "path": "assets/kits/hockey/qbc_alt_socks.png",
+   "sha256": "1ca246cd0302ad42649f880ba8798524786ed6f73e0da69fbc17ab1b25f5035b",
+   "size": 9703
+  },
+  {
+   "path": "assets/kits/hockey/qbc_away.png",
+   "sha256": "f7c3bbd2f74ac7c8b08ea7dd6d427ab684dadd4c31ffbdeaee569bf97a6a8421",
+   "size": 22523
+  },
+  {
+   "path": "assets/kits/hockey/qbc_away_socks.png",
+   "sha256": "b3fd4d6315761bcff2df1c9c56bf7b3e9f5a7a4460118f1fe5cef3198d12f4d7",
+   "size": 9735
+  },
+  {
+   "path": "assets/kits/hockey/qbc_home.png",
+   "sha256": "1660bebc8df7962a47b96bd02b15dd01f134056897497a847eb7ae63a1a8d15f",
+   "size": 27507
+  },
+  {
+   "path": "assets/kits/hockey/qbc_home_socks.png",
+   "sha256": "be10abbe6f60208099ab00f1a579d3ffe02f0df5289ef75794021d4a9712673d",
+   "size": 9676
+  },
+  {
+   "path": "assets/kits/hockey/seals_away.png",
+   "sha256": "e22a509df8c959bc074310f4a527b377a1ba4aa63220f4baf753d11c52006bc5",
+   "size": 15589
+  },
+  {
+   "path": "assets/kits/hockey/seals_away_socks.png",
+   "sha256": "f78289f1ffc4e90a00dfc60d076f3dd7a75bbf5a97894b94aff16aea306a75e5",
+   "size": 9701
+  },
+  {
+   "path": "assets/kits/hockey/seals_home.png",
+   "sha256": "24c191d659d95c3da751b310002d48c7acf95102f78f312e1ff8290dd95080d0",
+   "size": 15829
+  },
+  {
+   "path": "assets/kits/hockey/seals_home_socks.png",
+   "sha256": "7e843b4f73bbab3ca9d248e81c3e0b2b2fb077316faa629a289dcfda0d6a75fa",
+   "size": 9710
+  },
+  {
+   "path": "assets/kits/hockey/seals_winter.png",
+   "sha256": "92cac87010239ae5f4cd756ea1953e4a671b3ddfba3b9ac64da987fc20bee2d6",
+   "size": 16579
+  },
+  {
+   "path": "assets/kits/hockey/seals_winter_socks.png",
+   "sha256": "005739eddd230730d73125c0c686d421557ea737570e0f295cd60d2cec917e22",
+   "size": 7141
+  },
+  {
+   "path": "assets/kits/hockey/steel_alt.png",
+   "sha256": "a2f14f6cca6c59a9fe9f1c2a58404877219b8a6c6fb935fbd39c93561eae933a",
+   "size": 16468
+  },
+  {
+   "path": "assets/kits/hockey/steel_alt_socks.png",
+   "sha256": "a354c99af23cba3ecc660f92bf0c70aa8c466694ee0027001fbae2bb1d06d4a9",
+   "size": 9731
+  },
+  {
+   "path": "assets/kits/hockey/steel_away.png",
+   "sha256": "7decabc4990de7c110fcd1214c1ecedbfa6ccfa6092c92f7b81995cfd7c200eb",
+   "size": 16392
+  },
+  {
+   "path": "assets/kits/hockey/steel_away_socks.png",
+   "sha256": "44ccb2a382761eb41491d68d3f113e822130109159dc83929d4a7ce43d1ab07c",
+   "size": 9844
+  },
+  {
+   "path": "assets/kits/hockey/steel_home.png",
+   "sha256": "286f3f091c962c365e82ac4c66363e04a33a072563c89039929c1c615da3401c",
+   "size": 16409
+  },
+  {
+   "path": "assets/kits/hockey/steel_home_socks.png",
+   "sha256": "59daf8ee5fa640b559668dd87126c17ed1f85f79789c94117ed01c1aa775edcc",
+   "size": 9820
+  },
+  {
+   "path": "assets/kits/hockey/steel_winter.png",
+   "sha256": "6ba936a8646bfb4c1a63135b11b1da7243351f43c5930ff71024d6618e99e046",
+   "size": 13266
+  },
+  {
+   "path": "assets/kits/hockey/steel_winter_socks.png",
+   "sha256": "1ccc271fc4ae589445c1427d140b6c5ee6236d3a988d72fa619b3bf3d7e2e389",
+   "size": 6543
+  },
+  {
+   "path": "assets/kits/index.json",
+   "sha256": "7fd427cb5c59aaabce50c0c603cb0e080722f2eab73cc1efee167b35d6d1c543",
+   "size": 1327
+  },
+  {
+   "path": "assets/kits/soccer/blu_away_jersey.png",
+   "sha256": "deaaf7e7070f994facbaf6c4205921137c95256da5bfe806fbe9f621164e8b06",
+   "size": 7488
+  },
+  {
+   "path": "assets/kits/soccer/blu_away_shorts.png",
+   "sha256": "9658a6086c5e39c8607724fdda51ee0b922cfcdc08185b8cd027d780b60f6f48",
+   "size": 17239
+  },
+  {
+   "path": "assets/kits/soccer/blu_home_jersey.png",
+   "sha256": "aed783214ecdd878b05e37d0a198dd79b74dd0e1df5b0a099922402cc0f86bce",
+   "size": 7460
+  },
+  {
+   "path": "assets/kits/soccer/blu_home_shorts.png",
+   "sha256": "4a2f702beb922ece5ffc477335713102cc07d6eb0f42bfbcaf03a9a514de2ac0",
+   "size": 16480
+  },
+  {
+   "path": "assets/kits/soccer/blu_keeper_jersey.png",
+   "sha256": "8f2549c5016f13f299b6731a7429006b0342f3bdb5c8e8ccb60c628bfe8aec92",
+   "size": 8370
+  },
+  {
+   "path": "assets/kits/soccer/blu_keeper_shorts.png",
+   "sha256": "ebecc35a63e086145f193bc19993f0654bf2d98920e337150bc17760e1db4daa",
+   "size": 16099
+  },
+  {
+   "path": "assets/kits/soccer/cfc_away_jersey.png",
+   "sha256": "4eb2d20d6c266fd0ced20f81ff9e80c2fcd0afba6b9269c31af2c4d387688d6d",
+   "size": 7488
+  },
+  {
+   "path": "assets/kits/soccer/cfc_away_shorts.png",
+   "sha256": "ac0218433c3d265242939def27f6412a2d3bbde5ca4be6d06d1a5bc532c01e0e",
+   "size": 17120
+  },
+  {
+   "path": "assets/kits/soccer/cfc_home_jersey.png",
+   "sha256": "46bcdf05c7e1cb5c4d45e581b0dc468659d8b73b6e8055e8dfdf76c0de38f565",
+   "size": 7569
+  },
+  {
+   "path": "assets/kits/soccer/cfc_home_shorts.png",
+   "sha256": "b21b0c8fc20261bf66fb2feaf405c1fef9050375a521f5f76bf3e4c6d14b9bdc",
+   "size": 16639
+  },
+  {
+   "path": "assets/kits/soccer/cfc_keeper_jersey.png",
+   "sha256": "ff5bb5d882cb17172579bbc81c2bda8ab42e9a157395cc395ab0ea08d2b70e35",
+   "size": 8363
+  },
+  {
+   "path": "assets/kits/soccer/cfc_keeper_shorts.png",
+   "sha256": "8ae83c4b3503a5093da2d3c80ea5b3747ec015b4376dcd19ff7b1697d1c40f14",
+   "size": 15815
+  },
+  {
+   "path": "assets/kits/soccer/stfc_away_jersey.png",
+   "sha256": "a8c498f7366b5a88fd6ce11161707465f2305cee64bc9e59f61d3d7c30c249f9",
+   "size": 7461
+  },
+  {
+   "path": "assets/kits/soccer/stfc_away_shorts.png",
+   "sha256": "4bfa83ba6365952d217905a08d7d31663164421ca22c4fd200acb823f36df297",
+   "size": 19696
+  },
+  {
+   "path": "assets/kits/soccer/stfc_home_jersey.png",
+   "sha256": "1cc03136cb4f5320ca1750b521af3cd620607105675cd6739c6172d74f1f7c69",
+   "size": 7069
+  },
+  {
+   "path": "assets/kits/soccer/stfc_home_shorts.png",
+   "sha256": "432b73dab192bf2a09b7b5ef830d65eb2663cd0d3c0e743affa8d17bbdcaae39",
+   "size": 17529
+  },
+  {
+   "path": "assets/kits/soccer/stfc_keeper_jersey.png",
+   "sha256": "2d54ab88c7cfc09d3892f5bf568c63d3f8ba72b234d496cef77b02590b34f67b",
+   "size": 8139
+  },
+  {
+   "path": "assets/kits/soccer/stfc_keeper_shorts.png",
+   "sha256": "554ed5572d65ed17fc71a4ce299ce5f3f16630c17c9d6e906a950e1dc479a59b",
+   "size": 18346
+  },
+  {
+   "path": "assets/kits/soccer/tm2_away_jersey.png",
+   "sha256": "0dfc742d9ecdab047cf27e8cb43b9dd0c75a76e6744d9f8983c83c96f494ad3c",
+   "size": 7488
+  },
+  {
+   "path": "assets/kits/soccer/tm2_away_shorts.png",
+   "sha256": "b2e41269293ddfef8f43acf9e2a1ab69af6a69f85890074c8683e60fbc13866e",
+   "size": 17431
+  },
+  {
+   "path": "assets/kits/soccer/tm2_home_jersey.png",
+   "sha256": "538b65c874bfd1db57697ef69b8fc4f0ed92c291e8cef2b3caf3e58179dfe52e",
+   "size": 7419
+  },
+  {
+   "path": "assets/kits/soccer/tm2_home_shorts.png",
+   "sha256": "914d1f7be824e2ca4fa062608704d8d990480f77574c3c6b663a56c0e3a3219c",
+   "size": 16622
+  },
+  {
+   "path": "assets/kits/soccer/tm2_keeper_jersey.png",
+   "sha256": "f329e36ab28dd4d7f1a3ff8859e02aca1652ecbe1b75d8fe65fff2c66fbb3143",
+   "size": 8370
+  },
+  {
+   "path": "assets/kits/soccer/tm2_keeper_shorts.png",
+   "sha256": "a87059c6026dd2733fab1d666aa8506568e41105f2ab23957d6a7dcdf435797a",
+   "size": 16099
+  },
+  {
+   "path": "assets/kits/soccer/tm3_away_jersey.png",
+   "sha256": "5dfad3b46e8eb77a93fefa08941651622b54679605d19127243efbffcb185076",
+   "size": 7488
+  },
+  {
+   "path": "assets/kits/soccer/tm3_away_shorts.png",
+   "sha256": "a97fd586d60c3851dbaf93bfee3ffa52b3d3cbdf7a6deb4c4e22fe4083d651cd",
+   "size": 17754
+  },
+  {
+   "path": "assets/kits/soccer/tm3_home_jersey.png",
+   "sha256": "fcd19307d1a94458d158d2a327b8f7f7b761597dfb3e2039b4da204cff0a79ad",
+   "size": 7478
+  },
+  {
+   "path": "assets/kits/soccer/tm3_home_shorts.png",
+   "sha256": "f435e73853f2103301995eb75d2806fe30f8d90b333f375eee8bc54b1cb093be",
+   "size": 17143
+  },
+  {
+   "path": "assets/kits/soccer/tm3_keeper_jersey.png",
+   "sha256": "bb062148625a588fbeef81b037100aaf604878ca886722631e5c9767c0dbc8f7",
+   "size": 8363
+  },
+  {
+   "path": "assets/kits/soccer/tm3_keeper_shorts.png",
+   "sha256": "6a1ebf53cdc09b25b403ddd8654fd27c51f2917379f03f799ba46b8a64e9b8fc",
+   "size": 15815
+  },
+  {
+   "path": "assets/kits/soccer/wfc_away_jersey.png",
+   "sha256": "d14bdd7cef40972bacfbab1567bf342d00516a8413407b32d84052d2465cc2a1",
+   "size": 7488
+  },
+  {
+   "path": "assets/kits/soccer/wfc_away_shorts.png",
+   "sha256": "f785a679674c7b04435774f1008d7de4262333af3aa0a292d1d9f0c6650b06dd",
+   "size": 21235
+  },
+  {
+   "path": "assets/kits/soccer/wfc_home_jersey.png",
+   "sha256": "727b09174bca00d3295e008e8093a36a7006efae5cb5244fceea9223062dc388",
+   "size": 7375
+  },
+  {
+   "path": "assets/kits/soccer/wfc_home_shorts.png",
+   "sha256": "7ae98fbd54b56263f99b3e3577f19b6a5cffed15cda189d122cd01dff4a1eebc",
+   "size": 19977
+  },
+  {
+   "path": "assets/kits/soccer/wfc_keeper_jersey.png",
+   "sha256": "64f897f1b06019a3f2d4701b2035d1238ba63606e9c7db0d65a1a51a676d3d64",
+   "size": 8370
+  },
+  {
+   "path": "assets/kits/soccer/wfc_keeper_shorts.png",
+   "sha256": "b835c9ca0eb84badda3d1b15332f3344482b2d2b047974d38d85df87de57e9e8",
+   "size": 20132
+  },
+  {
+   "path": "assets/kits/soccer/whfc_away_jersey.png",
+   "sha256": "edc169e1fc5b764149569339c71fd2d6568638eff751bb23785173df219205bf",
+   "size": 7577
+  },
+  {
+   "path": "assets/kits/soccer/whfc_away_shorts.png",
+   "sha256": "e2597a70a7d84e78e9c53474a84c559de0a9596eb3d3971280af7d98f49df9e7",
+   "size": 19857
+  },
+  {
+   "path": "assets/kits/soccer/whfc_home_jersey.png",
+   "sha256": "2000ed09467541f1f02f7c36d1e858c727341da8ce04c052fbfa3fcd89739bb5",
+   "size": 7414
+  },
+  {
+   "path": "assets/kits/soccer/whfc_home_shorts.png",
+   "sha256": "26703fc3761262ca13b497366803e540a804e34f7d240c9a760435b141f860e4",
+   "size": 18074
+  },
+  {
+   "path": "assets/kits/soccer/whfc_keeper_jersey.png",
+   "sha256": "97cfe2bef7e5fb9c7f604ddd577507096e6a593cb44d49565e61cf66486b7ed9",
+   "size": 8173
+  },
+  {
+   "path": "assets/kits/soccer/whfc_keeper_shorts.png",
+   "sha256": "eec16ee1d7c4fd6f5815809f2eff2d8010c22df251e145c97af630a5689330a2",
+   "size": 17176
+  },
+  {
+   "path": "assets/sports/golf-128.png",
+   "sha256": "6b10c0a7951db14712ba5fbe8e0c1b58512f8bde6c1544e8bc9f276048e66206",
+   "size": 21571
+  },
+  {
+   "path": "assets/sports/golf.png",
+   "sha256": "4d2dd262711dc2a61cdc5a3fa433f35c807b4c06ed1f0506c812591fc1ad2e46",
+   "size": 129055
+  },
+  {
+   "path": "assets/sports/hockey-128.png",
+   "sha256": "c65e0df8f2baa834c54ecd574ae151c65e9179fff5246ab0ad91ce41834c2581",
+   "size": 27997
+  },
+  {
+   "path": "assets/sports/hockey-arena.jpg",
+   "sha256": "88ad1b7f3f7ed7ece0edf05b3a62b0b495d1ccc3245ecafaeca6873548414a33",
+   "size": 386290
+  },
+  {
+   "path": "assets/sports/hockey.png",
+   "sha256": "17d502df9e53d2fb4305996f3c565aea579ea3b812eb1d8744f7cda181ba4a8c",
+   "size": 139920
+  },
+  {
+   "path": "assets/sports/soccer-128.png",
+   "sha256": "6b97cdee930668ca1ada2dd14d8e5c99086e4ad80dc7263e803a874e41319b1e",
+   "size": 33602
+  },
+  {
+   "path": "assets/sports/soccer-ball.png",
+   "sha256": "5f4cd25051a6555e85d4301660180a8201c0eeb01e106707cee666d5b2692ada",
+   "size": 269
+  },
+  {
+   "path": "assets/sports/soccer-stadium.jpg",
+   "sha256": "0fb010e2c0d583d78d52d96e6726db2c194400155388f98f49c2e62ac17514fa",
+   "size": 113095
+  },
+  {
+   "path": "assets/sports/soccer.png",
+   "sha256": "552a881b051d3b4625151e7d55236bfd04464aabcb25aef798d5a53b2c324e0f",
+   "size": 265626
+  },
+  {
+   "path": "assets/sports/steve-head.png",
+   "sha256": "08a3eaaa064c5fa2b348d1801748a52b6bfff7fd17f32d429a5bb08a01d0fec2",
+   "size": 5953
+  },
+  {
+   "path": "assets/sports/steve.png",
+   "sha256": "b93d831938a8016dacc60047b1216a8880eec8d4005d1d0d6a1dd1a93d6cfcaa",
+   "size": 6026
+  },
+  {
+   "path": "assets/store/catalog.json",
+   "sha256": "305efa78a9fc2fe3d061a8616ed5d6a1b0c5d809e48246d9f267b493ea08c9e6",
+   "size": 20479
+  },
+  {
+   "path": "assets/store/sticks/birdo.png",
+   "sha256": "c32bafebe889064fb3d328a78e399ff57f1bcc38d1ec9b60abd2a13dbe4ebdc3",
+   "size": 10503
+  },
+  {
+   "path": "assets/store/sticks/canada.png",
+   "sha256": "13eebfef2a3b132869fa6c46bfe221dd0a1b5cd3f16e9bbbbea26d06523635b9",
+   "size": 6520
+  },
+  {
+   "path": "assets/store/sticks/czechia.png",
+   "sha256": "dfdc72e0ecfebc78af9b82ecec9c5f579b0e5c1a7bb2895ed73b5a258bd0274b",
+   "size": 6401
+  },
+  {
+   "path": "assets/store/sticks/dark_matter.png",
+   "sha256": "d2a89b7846147abcea6455250c904ba8076c609fb47c3441a1013b85db2b03ec",
+   "size": 8118
+  },
+  {
+   "path": "assets/store/sticks/finland.png",
+   "sha256": "7d448800206374fc456774a2fddba3a6b0d8d39f82ad55b54268ce3cc59be968",
+   "size": 7157
+  },
+  {
+   "path": "assets/store/sticks/flower.png",
+   "sha256": "22a24eeb6603a3932a2776cae263af8dcc4fbd8cbfc58c5224bfcb881ac62ad7",
+   "size": 7743
+  },
+  {
+   "path": "assets/store/sticks/geekbob.png",
+   "sha256": "5fd5b174feb4cbf796abf10101929710a85f0c27ca2158d4b01e32fea15183c4",
+   "size": 6930
+  },
+  {
+   "path": "assets/store/sticks/germany.png",
+   "sha256": "6a6c88f6735f2fc2c560f5b7c4777f01049e484c4a6e98db4066db175af313aa",
+   "size": 6760
+  },
+  {
+   "path": "assets/store/sticks/lightning.png",
+   "sha256": "841151af2ef0f12490c0076bbf44f3019e639271c3756c8089d3f3ee877bed6e",
+   "size": 6711
+  },
+  {
+   "path": "assets/store/sticks/russia.png",
+   "sha256": "a71b87a4a231212f53f927793eb2452d8265219d9dd46cda6c1dd73a9f39e4cc",
+   "size": 6699
+  },
+  {
+   "path": "assets/store/sticks/scythe.png",
+   "sha256": "4da3fafd7a07f6956daa076127e7f53d848ac6599536892677afb1d3fb6faf88",
+   "size": 9227
+  },
+  {
+   "path": "assets/store/sticks/sweden.png",
+   "sha256": "57383669523402e12f7cf5770572850235a4518c191d30ced0b62b9486c7b519",
+   "size": 6542
+  },
+  {
+   "path": "assets/store/sticks/switzerland.png",
+   "sha256": "4a825baa1bd5af58f71df18817859d921863df7ac1700a5f4658f577d2c41d0f",
+   "size": 7175
+  },
+  {
+   "path": "assets/store/sticks/usa.png",
+   "sha256": "f5785b8cbacb226e4d4d2739dfe50e425f835cd48648a8e1c3c0a6b99c2258d0",
+   "size": 6565
+  },
+  {
+   "path": "assets/store/sticks/winter.png",
+   "sha256": "a399046f264ffcd213e2bf3dd7343713a88e76346e8393c21ea9116e87e25c81",
+   "size": 6340
+  }
+ ]
+}
