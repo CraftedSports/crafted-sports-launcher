@@ -1,0 +1,172 @@
+{
+  "_readme": "What each instance contains. Put required mods in packs/<sport>/required, packs/shared/optimization (optional extras, on by default), resource packs in packs/<sport>/resourcepacks, then run publish.bat. Files that are on Modrinth download from Modrinth; the rest from this repo. 'dir' takes every file in a folder; 'local' one file; 'modrinth' the newest version of a Modrinth project. 'league' sets what the League tab shows (type cha = Crafted Hockey, cpl = Crafted Premier League; seasonStart = first day of the hockey season).",
+  "base": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/",
+  "news": [
+    {
+      "title": "Welcome to the Crafted Sports launcher",
+      "body": "Pick a sport, press Play - mods, packs and the server are all set up for you.",
+      "date": "2026-10-27"
+    }
+  ],
+  "instances": [
+    {
+      "id": "soccer",
+      "name": "Crafted Premier",
+      "tagline": "Crafted Premier League",
+      "status": "live",
+      "minecraft": "1.21.1",
+      "loader": {
+        "type": "fabric",
+        "version": "0.18.4"
+      },
+      "server": {
+        "name": "Crafted Premier League",
+        "address": "212.192.29.30:25525"
+      },
+      "memory": 4096,
+      "theme": {
+        "accent": "#00ff85",
+        "accent2": "#ff2882",
+        "dark": "#1b0020",
+        "logo": "../assets/sports/soccer.png",
+        "background": "../assets/sports/soccer-stadium.jpg"
+      },
+      "resourcepacks": [
+        "CraftedSoccerPack.zip",
+        "CraftedSoccerMenus.zip"
+      ],
+      "options": {
+        "guiScale": "3",
+        "renderDistance": "12",
+        "simulationDistance": "8",
+        "lang": "en_us"
+      },
+      "files": [
+        {
+          "dir": "soccer/required",
+          "to": "mods"
+        },
+        {
+          "dir": "shared/optimization",
+          "to": "mods",
+          "optional": true,
+          "group": "Optimization mods",
+          "required": [
+            "placeholder-api",
+            "ToadLib",
+            "malilib"
+          ],
+          "_note": "Every mod in this folder, on by default; players can switch any off. Libraries other mods need (listed in required) always stay."
+        },
+        {
+          "local": "soccer/resourcepacks/CraftedSoccerPack.zip",
+          "path": "resourcepacks/CraftedSoccerPack.zip"
+        },
+        {
+          "local": "soccer/resourcepacks/CraftedSoccerMenus.zip",
+          "path": "resourcepacks/CraftedSoccerMenus.zip"
+        }
+      ],
+      "season": {
+        "number": 1,
+        "label": "Season 1"
+      },
+      "optionsPinned": {
+        "panoramaScrollSpeed": "0.0"
+      },
+      "league": {
+        "type": "cpl",
+        "website": "https://craftedpremier.com"
+      },
+      "short": "Soccer"
+    },
+    {
+      "id": "hockey",
+      "name": "Crafted Hockey",
+      "tagline": "Crafted Hockey Association",
+      "status": "live",
+      "minecraft": "1.21.1",
+      "loader": {
+        "type": "fabric",
+        "version": "0.18.4"
+      },
+      "server": {
+        "name": "Crafted Hockey Association",
+        "address": "play.craftedhockey.com"
+      },
+      "memory": 4096,
+      "theme": {
+        "accent": "#c49a52",
+        "accent2": "#1b2c48",
+        "dark": "#0c1424",
+        "logo": "../assets/sports/hockey.png",
+        "logoPlate": "#ffffff",
+        "background": "../assets/sports/hockey-arena.jpg"
+      },
+      "resourcepacks": [
+        "CHA-pack-optimized.zip",
+        "CraftedHockeyMenus.zip"
+      ],
+      "options": {
+        "guiScale": "3",
+        "renderDistance": "12",
+        "lang": "en_us"
+      },
+      "files": [
+        {
+          "dir": "hockey/required",
+          "to": "mods"
+        },
+        {
+          "dir": "shared/optimization",
+          "to": "mods",
+          "optional": true,
+          "group": "Optimization mods",
+          "required": [
+            "placeholder-api",
+            "ToadLib",
+            "malilib"
+          ],
+          "_note": "Every mod in this folder, on by default; players can switch any off. Libraries other mods need (listed in required) always stay."
+        },
+        {
+          "local": "hockey/resourcepacks/CHA-pack-optimized.zip",
+          "path": "resourcepacks/CHA-pack-optimized.zip"
+        },
+        {
+          "local": "hockey/resourcepacks/CraftedHockeyMenus.zip",
+          "path": "resourcepacks/CraftedHockeyMenus.zip"
+        }
+      ],
+      "season": {
+        "number": 2,
+        "label": "Season 2"
+      },
+      "optionsPinned": {
+        "panoramaScrollSpeed": "0.0"
+      },
+      "league": {
+        "type": "cha",
+        "seasonStart": "2026-09-01",
+        "website": "https://craftedhockey.com"
+      },
+      "short": "Hockey"
+    },
+    {
+      "id": "golf",
+      "name": "Crafted Golf",
+      "tagline": "CGA Tour - coming soon",
+      "status": "soon",
+      "minecraft": "1.21.1",
+      "theme": {
+        "accent": "#e8333b",
+        "accent2": "#1d3d7a",
+        "dark": "#0b1630",
+        "logo": "../assets/sports/golf.png",
+        "background": ""
+      },
+      "files": [],
+      "short": "Golf"
+    }
+  ]
+}

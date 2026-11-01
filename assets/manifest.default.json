@@ -1,0 +1,733 @@
+{
+ "generated": "2026-11-01T00:17:35.203Z",
+ "news": [
+  {
+   "title": "Welcome to the Crafted Sports launcher",
+   "body": "Pick a sport, press Play - mods, packs and the server are all set up for you.",
+   "date": "2026-10-27"
+  }
+ ],
+ "instances": [
+  {
+   "id": "soccer",
+   "name": "Crafted Premier",
+   "tagline": "Crafted Premier League",
+   "status": "live",
+   "minecraft": "1.21.1",
+   "loader": {
+    "type": "fabric",
+    "version": "0.18.4"
+   },
+   "server": {
+    "name": "Crafted Premier League",
+    "address": "212.192.29.30:25525"
+   },
+   "memory": 4096,
+   "theme": {
+    "accent": "#00ff85",
+    "accent2": "#ff2882",
+    "dark": "#1b0020",
+    "logo": "../assets/sports/soccer.png",
+    "background": "../assets/sports/soccer-stadium.jpg"
+   },
+   "resourcepacks": [
+    "CraftedSoccerPack.zip",
+    "CraftedSoccerMenus.zip"
+   ],
+   "options": {
+    "guiScale": "3",
+    "renderDistance": "12",
+    "simulationDistance": "8",
+    "lang": "en_us"
+   },
+   "season": {
+    "number": 1,
+    "label": "Season 1"
+   },
+   "optionsPinned": {
+    "panoramaScrollSpeed": "0.0"
+   },
+   "league": {
+    "type": "cpl",
+    "website": "https://craftedpremier.com"
+   },
+   "short": "Soccer",
+   "version": "fc083dedd0",
+   "files": [
+    {
+     "path": "mods/Boxlib-fabric-14.4.2.jar",
+     "url": "https://cdn.modrinth.com/data/HAE5KvTA/versions/8cx5eu01/Boxlib-fabric-14.4.2.jar",
+     "sha1": "bf26401d921da4cd8d4dc824df461eecffd9c95e",
+     "size": 292043,
+     "local": "soccer/required/Boxlib-fabric-14.4.2.jar"
+    },
+    {
+     "path": "mods/NoFog-1.3.6+1.16.5-1.21.jar",
+     "url": "https://cdn.modrinth.com/data/QSzy55SB/versions/NrEJbYuZ/NoFog-1.3.6%2B1.16.5-1.21.jar",
+     "sha1": "adc761eac1942706cce03cee8907735dd70e9083",
+     "size": 65656,
+     "local": "soccer/required/NoFog-1.3.6+1.16.5-1.21.jar"
+    },
+    {
+     "path": "mods/boxhud-fabric-2.0.1.jar",
+     "url": "https://cdn.modrinth.com/data/gjFWUARA/versions/AQYcC1YW/boxhud-fabric-2.0.1.jar",
+     "sha1": "370172e89d20a232bb1e64f9d9c020c90a61ec2b",
+     "size": 1723515,
+     "local": "soccer/required/boxhud-fabric-2.0.1.jar"
+    },
+    {
+     "path": "mods/citresewn-1.2.2+1.21.jar",
+     "url": "https://cdn.modrinth.com/data/otVJckYQ/versions/JUnP9V1A/citresewn-1.2.2%2B1.21.jar",
+     "sha1": "5569769f66eda6d51ca3ae56d58d5a4657f19ef9",
+     "size": 396723,
+     "local": "soccer/required/citresewn-1.2.2+1.21.jar"
+    },
+    {
+     "path": "mods/cloth-config-15.0.140-fabric.jar",
+     "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/HpMb5wGb/cloth-config-15.0.140-fabric.jar",
+     "sha1": "5d82342a2df53fd6df712bfdd583a811572918a4",
+     "size": 1157166,
+     "local": "soccer/required/cloth-config-15.0.140-fabric.jar"
+    },
+    {
+     "path": "mods/cpl-client-0.7.1.jar",
+     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/soccer/required/cpl-client-0.7.1.jar",
+     "sha1": "3cac42703c7bbec3bad624c82f1412dfdbc5f4aa",
+     "size": 1577331,
+     "local": "soccer/required/cpl-client-0.7.1.jar"
+    },
+    {
+     "path": "mods/entity_model_features_1.21-fabric-3.0.12.jar",
+     "url": "https://cdn.modrinth.com/data/4I1XuqiY/versions/r7vEKOfY/entity_model_features_1.21-fabric-3.0.12.jar",
+     "sha1": "61edf36251b3eec497d622fae9ea1baac6308a05",
+     "size": 496342,
+     "local": "soccer/required/entity_model_features_1.21-fabric-3.0.12.jar"
+    },
+    {
+     "path": "mods/entity_texture_features_1.21-fabric-7.0.9.jar",
+     "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/RinXbOFW/entity_texture_features_1.21-fabric-7.0.9.jar",
+     "sha1": "0616d3dd4c8a27350ee46e94577da2c247878558",
+     "size": 728221,
+     "local": "soccer/required/entity_texture_features_1.21-fabric-7.0.9.jar"
+    },
+    {
+     "path": "mods/fabric-api-0.116.9+1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/yGAe1owa/fabric-api-0.116.9%2B1.21.1.jar",
+     "sha1": "e41cb63b923a6064021c5a30afa4e844b82ca6e9",
+     "size": 2425600,
+     "local": "soccer/required/fabric-api-0.116.9+1.21.1.jar"
+    },
+    {
+     "path": "mods/fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar",
+     "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/ViT4gucI/fabric-language-kotlin-1.13.9%2Bkotlin.2.3.10.jar",
+     "sha1": "20b2200961e11994595ebb2d5f6624f232d13751",
+     "size": 7642216,
+     "local": "soccer/required/fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar"
+    },
+    {
+     "path": "mods/mcef-fabric-2.1.6-1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/TObQ0HxZ/versions/mnUKY41H/mcef-fabric-2.1.6-1.21.1.jar",
+     "sha1": "68f9c951b02e864ac6a0b9d4a60c8547d326eb26",
+     "size": 221767,
+     "local": "soccer/required/mcef-fabric-2.1.6-1.21.1.jar"
+    },
+    {
+     "path": "mods/modmenu-11.0.4.jar",
+     "url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/v6Xx3fbU/modmenu-11.0.4.jar",
+     "sha1": "8af1b0b9ee18eab5cd5e5c97c497f0e473c49e9a",
+     "size": 973059,
+     "local": "soccer/required/modmenu-11.0.4.jar"
+    },
+    {
+     "path": "mods/sodium-extra-fabric-0.6.0+mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/PtjYWJkn/versions/anDafurZ/sodium-extra-fabric-0.6.0%2Bmc1.21.1.jar",
+     "sha1": "66160fac4fdb9ddd854c5ed068fc329d24d09fd1",
+     "size": 373661,
+     "local": "soccer/required/sodium-extra-fabric-0.6.0+mc1.21.1.jar"
+    },
+    {
+     "path": "mods/sodium-fabric-0.6.13+mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/AANobbMI/versions/u1OEbNKx/sodium-fabric-0.6.13%2Bmc1.21.1.jar",
+     "sha1": "928a2598178c3a58b0638bab842f467d2e49251a",
+     "size": 1297761,
+     "local": "soccer/required/sodium-fabric-0.6.13+mc1.21.1.jar"
+    },
+    {
+     "path": "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
+     "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/o3cDn8Vp/yet_another_config_lib_v3-3.8.2%2B1.21.1-fabric.jar",
+     "sha1": "e075503382f70715ab9fc6f66d603397a86eb3e0",
+     "size": 1131265,
+     "local": "soccer/required/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar"
+    },
+    {
+     "path": "mods/zoomify-2.15.2+1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/6jrMC48Z/zoomify-2.15.2%2B1.21.1.jar",
+     "sha1": "9ec9c47e1d3465ea0cbd595b6d9d12227239c9a6",
+     "size": 872937,
+     "local": "soccer/required/zoomify-2.15.2+1.21.1.jar"
+    },
+    {
+     "path": "mods/ImmediatelyFast-Fabric-1.6.10+1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/yHztKxR5/ImmediatelyFast-Fabric-1.6.10%2B1.21.1.jar",
+     "sha1": "ff2be016b12128fc0cd875a21a307d681edde817",
+     "size": 342770,
+     "local": "shared/optimization/ImmediatelyFast-Fabric-1.6.10+1.21.1.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Immediately Fast",
+     "description": "Faster HUD, text and entity drawing"
+    },
+    {
+     "path": "mods/LazyDFU-[UNOFFICIAL]-1.21.jar",
+     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/shared/optimization/LazyDFU-%5BUNOFFICIAL%5D-1.21.jar",
+     "sha1": "5f6f875ae9561937a107d5a970abe2d936e10cc3",
+     "size": 14892,
+     "local": "shared/optimization/LazyDFU-[UNOFFICIAL]-1.21.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Lazy DFU",
+     "description": "Starts the game faster"
+    },
+    {
+     "path": "mods/Palladium-1.21-1.21.2-1.1.7.3p.jar",
+     "url": "https://cdn.modrinth.com/data/JNRr4jji/versions/lp6kFckd/Palladium-1.21-1.21.2-1.1.7.3p.jar",
+     "sha1": "e01c6e93a55be680bb9c179d19c278570d2a5e87",
+     "size": 111197,
+     "local": "shared/optimization/Palladium-1.21-1.21.2-1.1.7.3p.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Palladium",
+     "description": "Performance tweaks"
+    },
+    {
+     "path": "mods/ToadLib-1.4.3-1.21-1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/CYQ7VYrM/versions/HL3r2VlG/ToadLib-1.4.3-1.21-1.21.1.jar",
+     "sha1": "e9f8c082a69a0cfe716db7dbdd8db69e38656fa4",
+     "size": 485606,
+     "local": "shared/optimization/ToadLib-1.4.3-1.21-1.21.1.jar",
+     "optional": false
+    },
+    {
+     "path": "mods/chat_heads-0.15.1-fabric-1.21.jar",
+     "url": "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/Xxx6dqjP/chat_heads-0.15.1-fabric-1.21.jar",
+     "sha1": "0148f73f5ee786d537d4b274b2db6894eb0a1c67",
+     "size": 84247,
+     "local": "shared/optimization/chat_heads-0.15.1-fabric-1.21.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Chat Heads",
+     "description": "Players' heads next to their chat"
+    },
+    {
+     "path": "mods/custom-crosshair-mod-v1.6.0-fabric-mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/o1tyE5vJ/versions/ARFTjK92/custom-crosshair-mod-v1.6.0-fabric-mc1.21.1.jar",
+     "sha1": "b0ae501bb09e701b66e617d739119095f1a16dc3",
+     "size": 140493,
+     "local": "shared/optimization/custom-crosshair-mod-v1.6.0-fabric-mc1.21.1.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Custom Crosshair Mod",
+     "description": "Pick your own crosshair"
+    },
+    {
+     "path": "mods/ferritecore-7.0.3-fabric.jar",
+     "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar",
+     "sha1": "a8a6a34fcda177da2828cedef44e0e538cf78aad",
+     "size": 123450,
+     "local": "shared/optimization/ferritecore-7.0.3-fabric.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Ferritecore",
+     "description": "Uses less memory"
+    },
+    {
+     "path": "mods/iris-fabric-1.8.8+mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/zsoi0dso/iris-fabric-1.8.8%2Bmc1.21.1.jar",
+     "sha1": "4e0df4011503b4b36ba69877ea7247c1a47fea00",
+     "size": 2690177,
+     "local": "shared/optimization/iris-fabric-1.8.8+mc1.21.1.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Iris",
+     "description": "Shaders (pick them in Video Settings)"
+    },
+    {
+     "path": "mods/krypton-0.2.8.jar",
+     "url": "https://cdn.modrinth.com/data/fQEb0iXm/versions/Acz3ttTp/krypton-0.2.8.jar",
+     "sha1": "73e792eb5f120787becda4b87b6ff18b26caea50",
+     "size": 161045,
+     "local": "shared/optimization/krypton-0.2.8.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Krypton",
+     "description": "Lighter networking"
+    },
+    {
+     "path": "mods/lithium-fabric-0.15.4+mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/N08Z8wog/lithium-fabric-0.15.4%2Bmc1.21.1.jar",
+     "sha1": "7d82a004403b7780d4443d8e40361a55cfd0ae63",
+     "size": 797454,
+     "local": "shared/optimization/lithium-fabric-0.15.4+mc1.21.1.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Lithium",
+     "description": "Faster game logic"
+    },
+    {
+     "path": "mods/malilib-fabric-1.21-0.21.10.jar",
+     "url": "https://cdn.modrinth.com/data/GcWjdA9I/versions/C99LEy6r/malilib-fabric-1.21-0.21.10.jar",
+     "sha1": "e2699ef71618c54fc03c6c8b28e336603596dcef",
+     "size": 1411200,
+     "local": "shared/optimization/malilib-fabric-1.21-0.21.10.jar",
+     "optional": false
+    },
+    {
+     "path": "mods/modelfix-1.21-1.6-fabric.jar",
+     "url": "https://cdn.modrinth.com/data/QdG47OkI/versions/FUZo6yCk/modelfix-1.21-1.6-fabric.jar",
+     "sha1": "b8069f2a672abdea1112daa6d716a0e482cf61ea",
+     "size": 62761,
+     "local": "shared/optimization/modelfix-1.21-1.6-fabric.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Modelfix",
+     "description": "Fixes gaps in item models"
+    },
+    {
+     "path": "mods/placeholder-api-2.4.2+1.21.jar",
+     "url": "https://cdn.modrinth.com/data/eXts2L7r/versions/U5bhVym2/placeholder-api-2.4.2%2B1.21.jar",
+     "sha1": "aa1b9a49f9f190dfe4825c502b150817dd2998c3",
+     "size": 232325,
+     "local": "shared/optimization/placeholder-api-2.4.2+1.21.jar",
+     "optional": false
+    },
+    {
+     "path": "mods/reeses-sodium-options-fabric-1.8.3+mc1.21.4.jar",
+     "url": "https://cdn.modrinth.com/data/Bh37bMuy/versions/KoUrx3jJ/reeses-sodium-options-fabric-1.8.3%2Bmc1.21.4.jar",
+     "sha1": "c72f07a8f139f0420cbce29bd9eb29fb24db427f",
+     "size": 81067,
+     "local": "shared/optimization/reeses-sodium-options-fabric-1.8.3+mc1.21.4.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Reeses Sodium Options",
+     "description": "A nicer Video Settings screen"
+    },
+    {
+     "path": "mods/skiptransitions-1.4.0+mc1.21.jar",
+     "url": "https://cdn.modrinth.com/data/Zoz5HQjH/versions/sHBS8WVg/skiptransitions-1.4.0%2Bmc1.21.jar",
+     "sha1": "fd775a95322b8bd515f96c7cabcd425164ef442f",
+     "size": 16339,
+     "local": "shared/optimization/skiptransitions-1.4.0+mc1.21.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Skiptransitions",
+     "description": "Skips menu fade animations"
+    },
+    {
+     "path": "mods/vmp-fabric-mc1.21.1-0.2.0+beta.7.172-all.jar",
+     "url": "https://cdn.modrinth.com/data/wnEe9KBa/versions/VmlY7QTx/vmp-fabric-mc1.21.1-0.2.0%2Bbeta.7.172-all.jar",
+     "sha1": "267975777ba52a23d4423a60e9288f9ce288344e",
+     "size": 433667,
+     "local": "shared/optimization/vmp-fabric-mc1.21.1-0.2.0+beta.7.172-all.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Vmp",
+     "description": "Smoother with lots of players around"
+    },
+    {
+     "path": "resourcepacks/CraftedSoccerPack.zip",
+     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/soccer/resourcepacks/CraftedSoccerPack.zip",
+     "sha1": "ecb05d6c0e8a04348d78ec1ed7ce38bdd03f705d",
+     "size": 13890588,
+     "local": "soccer/resourcepacks/CraftedSoccerPack.zip"
+    },
+    {
+     "path": "resourcepacks/CraftedSoccerMenus.zip",
+     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/soccer/resourcepacks/CraftedSoccerMenus.zip",
+     "sha1": "d38d93f40ba366adc1ba61b7f727ba9b16b2c5f6",
+     "size": 2602810,
+     "local": "soccer/resourcepacks/CraftedSoccerMenus.zip"
+    }
+   ]
+  },
+  {
+   "id": "hockey",
+   "name": "Crafted Hockey",
+   "tagline": "Crafted Hockey Association",
+   "status": "live",
+   "minecraft": "1.21.1",
+   "loader": {
+    "type": "fabric",
+    "version": "0.18.4"
+   },
+   "server": {
+    "name": "Crafted Hockey Association",
+    "address": "play.craftedhockey.com"
+   },
+   "memory": 4096,
+   "theme": {
+    "accent": "#c49a52",
+    "accent2": "#1b2c48",
+    "dark": "#0c1424",
+    "logo": "../assets/sports/hockey.png",
+    "logoPlate": "#ffffff",
+    "background": "../assets/sports/hockey-arena.jpg"
+   },
+   "resourcepacks": [
+    "CHA-pack-optimized.zip",
+    "CraftedHockeyMenus.zip"
+   ],
+   "options": {
+    "guiScale": "3",
+    "renderDistance": "12",
+    "lang": "en_us"
+   },
+   "season": {
+    "number": 2,
+    "label": "Season 2"
+   },
+   "optionsPinned": {
+    "panoramaScrollSpeed": "0.0"
+   },
+   "league": {
+    "type": "cha",
+    "seasonStart": "2026-09-01",
+    "website": "https://craftedhockey.com"
+   },
+   "short": "Hockey",
+   "version": "27ab28e41a",
+   "files": [
+    {
+     "path": "mods/Boxlib-fabric-14.4.2.jar",
+     "url": "https://cdn.modrinth.com/data/HAE5KvTA/versions/8cx5eu01/Boxlib-fabric-14.4.2.jar",
+     "sha1": "bf26401d921da4cd8d4dc824df461eecffd9c95e",
+     "size": 292043,
+     "local": "hockey/required/Boxlib-fabric-14.4.2.jar"
+    },
+    {
+     "path": "mods/NoFog-1.3.6+1.16.5-1.21.jar",
+     "url": "https://cdn.modrinth.com/data/QSzy55SB/versions/NrEJbYuZ/NoFog-1.3.6%2B1.16.5-1.21.jar",
+     "sha1": "adc761eac1942706cce03cee8907735dd70e9083",
+     "size": 65656,
+     "local": "hockey/required/NoFog-1.3.6+1.16.5-1.21.jar"
+    },
+    {
+     "path": "mods/boxhud-fabric-2.0.1.jar",
+     "url": "https://cdn.modrinth.com/data/gjFWUARA/versions/AQYcC1YW/boxhud-fabric-2.0.1.jar",
+     "sha1": "370172e89d20a232bb1e64f9d9c020c90a61ec2b",
+     "size": 1723515,
+     "local": "hockey/required/boxhud-fabric-2.0.1.jar"
+    },
+    {
+     "path": "mods/cha-client-1.0.1.jar",
+     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/hockey/required/cha-client-1.0.1.jar",
+     "sha1": "580260a89e1d3cec9ef314a60930c1320f01c4d8",
+     "size": 189622,
+     "local": "hockey/required/cha-client-1.0.1.jar"
+    },
+    {
+     "path": "mods/citresewn-1.2.2+1.21.jar",
+     "url": "https://cdn.modrinth.com/data/otVJckYQ/versions/JUnP9V1A/citresewn-1.2.2%2B1.21.jar",
+     "sha1": "5569769f66eda6d51ca3ae56d58d5a4657f19ef9",
+     "size": 396723,
+     "local": "hockey/required/citresewn-1.2.2+1.21.jar"
+    },
+    {
+     "path": "mods/cloth-config-15.0.140-fabric.jar",
+     "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/HpMb5wGb/cloth-config-15.0.140-fabric.jar",
+     "sha1": "5d82342a2df53fd6df712bfdd583a811572918a4",
+     "size": 1157166,
+     "local": "hockey/required/cloth-config-15.0.140-fabric.jar"
+    },
+    {
+     "path": "mods/entity_model_features_1.21-fabric-3.0.12.jar",
+     "url": "https://cdn.modrinth.com/data/4I1XuqiY/versions/r7vEKOfY/entity_model_features_1.21-fabric-3.0.12.jar",
+     "sha1": "61edf36251b3eec497d622fae9ea1baac6308a05",
+     "size": 496342,
+     "local": "hockey/required/entity_model_features_1.21-fabric-3.0.12.jar"
+    },
+    {
+     "path": "mods/entity_texture_features_1.21-fabric-7.0.9.jar",
+     "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/RinXbOFW/entity_texture_features_1.21-fabric-7.0.9.jar",
+     "sha1": "0616d3dd4c8a27350ee46e94577da2c247878558",
+     "size": 728221,
+     "local": "hockey/required/entity_texture_features_1.21-fabric-7.0.9.jar"
+    },
+    {
+     "path": "mods/fabric-api-0.116.9+1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/yGAe1owa/fabric-api-0.116.9%2B1.21.1.jar",
+     "sha1": "e41cb63b923a6064021c5a30afa4e844b82ca6e9",
+     "size": 2425600,
+     "local": "hockey/required/fabric-api-0.116.9+1.21.1.jar"
+    },
+    {
+     "path": "mods/fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar",
+     "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/ViT4gucI/fabric-language-kotlin-1.13.9%2Bkotlin.2.3.10.jar",
+     "sha1": "20b2200961e11994595ebb2d5f6624f232d13751",
+     "size": 7642216,
+     "local": "hockey/required/fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar"
+    },
+    {
+     "path": "mods/lambdynamiclights-4.8.7+1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/yBW8D80W/versions/CQuTG9xY/lambdynamiclights-4.8.7%2B1.21.1.jar",
+     "sha1": "b7dc4acb053b98810faffab19fde0f18b453a824",
+     "size": 2012226,
+     "local": "hockey/required/lambdynamiclights-4.8.7+1.21.1.jar"
+    },
+    {
+     "path": "mods/mcef-fabric-2.1.6-1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/TObQ0HxZ/versions/mnUKY41H/mcef-fabric-2.1.6-1.21.1.jar",
+     "sha1": "68f9c951b02e864ac6a0b9d4a60c8547d326eb26",
+     "size": 221767,
+     "local": "hockey/required/mcef-fabric-2.1.6-1.21.1.jar"
+    },
+    {
+     "path": "mods/modmenu-11.0.4.jar",
+     "url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/v6Xx3fbU/modmenu-11.0.4.jar",
+     "sha1": "8af1b0b9ee18eab5cd5e5c97c497f0e473c49e9a",
+     "size": 973059,
+     "local": "hockey/required/modmenu-11.0.4.jar"
+    },
+    {
+     "path": "mods/rrls-5.0.10+mc1.21.1-fabric.jar",
+     "url": "https://cdn.modrinth.com/data/ZP7xHXtw/versions/FDyKvCJ2/rrls-5.0.10%2Bmc1.21.1-fabric.jar",
+     "sha1": "ea0465c3191eb78696aa44434a46af2bac013f11",
+     "size": 172463,
+     "local": "hockey/required/rrls-5.0.10+mc1.21.1-fabric.jar"
+    },
+    {
+     "path": "mods/sodium-extra-fabric-0.6.0+mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/PtjYWJkn/versions/anDafurZ/sodium-extra-fabric-0.6.0%2Bmc1.21.1.jar",
+     "sha1": "66160fac4fdb9ddd854c5ed068fc329d24d09fd1",
+     "size": 373661,
+     "local": "hockey/required/sodium-extra-fabric-0.6.0+mc1.21.1.jar"
+    },
+    {
+     "path": "mods/sodium-fabric-0.6.13+mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/AANobbMI/versions/u1OEbNKx/sodium-fabric-0.6.13%2Bmc1.21.1.jar",
+     "sha1": "928a2598178c3a58b0638bab842f467d2e49251a",
+     "size": 1297761,
+     "local": "hockey/required/sodium-fabric-0.6.13+mc1.21.1.jar"
+    },
+    {
+     "path": "mods/voicechat-fabric-1.21.1-2.5.33.jar",
+     "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/7NHvY1SY/voicechat-fabric-1.21.1-2.5.33.jar",
+     "sha1": "96323956e35269be5283626d04a99a99a5b99f21",
+     "size": 7297776,
+     "local": "hockey/required/voicechat-fabric-1.21.1-2.5.33.jar"
+    },
+    {
+     "path": "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
+     "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/o3cDn8Vp/yet_another_config_lib_v3-3.8.2%2B1.21.1-fabric.jar",
+     "sha1": "e075503382f70715ab9fc6f66d603397a86eb3e0",
+     "size": 1131265,
+     "local": "hockey/required/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar"
+    },
+    {
+     "path": "mods/zoomify-2.15.2+1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/6jrMC48Z/zoomify-2.15.2%2B1.21.1.jar",
+     "sha1": "9ec9c47e1d3465ea0cbd595b6d9d12227239c9a6",
+     "size": 872937,
+     "local": "hockey/required/zoomify-2.15.2+1.21.1.jar"
+    },
+    {
+     "path": "mods/ImmediatelyFast-Fabric-1.6.10+1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/yHztKxR5/ImmediatelyFast-Fabric-1.6.10%2B1.21.1.jar",
+     "sha1": "ff2be016b12128fc0cd875a21a307d681edde817",
+     "size": 342770,
+     "local": "shared/optimization/ImmediatelyFast-Fabric-1.6.10+1.21.1.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Immediately Fast",
+     "description": "Faster HUD, text and entity drawing"
+    },
+    {
+     "path": "mods/LazyDFU-[UNOFFICIAL]-1.21.jar",
+     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/shared/optimization/LazyDFU-%5BUNOFFICIAL%5D-1.21.jar",
+     "sha1": "5f6f875ae9561937a107d5a970abe2d936e10cc3",
+     "size": 14892,
+     "local": "shared/optimization/LazyDFU-[UNOFFICIAL]-1.21.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Lazy DFU",
+     "description": "Starts the game faster"
+    },
+    {
+     "path": "mods/Palladium-1.21-1.21.2-1.1.7.3p.jar",
+     "url": "https://cdn.modrinth.com/data/JNRr4jji/versions/lp6kFckd/Palladium-1.21-1.21.2-1.1.7.3p.jar",
+     "sha1": "e01c6e93a55be680bb9c179d19c278570d2a5e87",
+     "size": 111197,
+     "local": "shared/optimization/Palladium-1.21-1.21.2-1.1.7.3p.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Palladium",
+     "description": "Performance tweaks"
+    },
+    {
+     "path": "mods/ToadLib-1.4.3-1.21-1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/CYQ7VYrM/versions/HL3r2VlG/ToadLib-1.4.3-1.21-1.21.1.jar",
+     "sha1": "e9f8c082a69a0cfe716db7dbdd8db69e38656fa4",
+     "size": 485606,
+     "local": "shared/optimization/ToadLib-1.4.3-1.21-1.21.1.jar",
+     "optional": false
+    },
+    {
+     "path": "mods/chat_heads-0.15.1-fabric-1.21.jar",
+     "url": "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/Xxx6dqjP/chat_heads-0.15.1-fabric-1.21.jar",
+     "sha1": "0148f73f5ee786d537d4b274b2db6894eb0a1c67",
+     "size": 84247,
+     "local": "shared/optimization/chat_heads-0.15.1-fabric-1.21.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Chat Heads",
+     "description": "Players' heads next to their chat"
+    },
+    {
+     "path": "mods/custom-crosshair-mod-v1.6.0-fabric-mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/o1tyE5vJ/versions/ARFTjK92/custom-crosshair-mod-v1.6.0-fabric-mc1.21.1.jar",
+     "sha1": "b0ae501bb09e701b66e617d739119095f1a16dc3",
+     "size": 140493,
+     "local": "shared/optimization/custom-crosshair-mod-v1.6.0-fabric-mc1.21.1.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Custom Crosshair Mod",
+     "description": "Pick your own crosshair"
+    },
+    {
+     "path": "mods/ferritecore-7.0.3-fabric.jar",
+     "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar",
+     "sha1": "a8a6a34fcda177da2828cedef44e0e538cf78aad",
+     "size": 123450,
+     "local": "shared/optimization/ferritecore-7.0.3-fabric.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Ferritecore",
+     "description": "Uses less memory"
+    },
+    {
+     "path": "mods/iris-fabric-1.8.8+mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/zsoi0dso/iris-fabric-1.8.8%2Bmc1.21.1.jar",
+     "sha1": "4e0df4011503b4b36ba69877ea7247c1a47fea00",
+     "size": 2690177,
+     "local": "shared/optimization/iris-fabric-1.8.8+mc1.21.1.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Iris",
+     "description": "Shaders (pick them in Video Settings)"
+    },
+    {
+     "path": "mods/krypton-0.2.8.jar",
+     "url": "https://cdn.modrinth.com/data/fQEb0iXm/versions/Acz3ttTp/krypton-0.2.8.jar",
+     "sha1": "73e792eb5f120787becda4b87b6ff18b26caea50",
+     "size": 161045,
+     "local": "shared/optimization/krypton-0.2.8.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Krypton",
+     "description": "Lighter networking"
+    },
+    {
+     "path": "mods/lithium-fabric-0.15.4+mc1.21.1.jar",
+     "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/N08Z8wog/lithium-fabric-0.15.4%2Bmc1.21.1.jar",
+     "sha1": "7d82a004403b7780d4443d8e40361a55cfd0ae63",
+     "size": 797454,
+     "local": "shared/optimization/lithium-fabric-0.15.4+mc1.21.1.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Lithium",
+     "description": "Faster game logic"
+    },
+    {
+     "path": "mods/malilib-fabric-1.21-0.21.10.jar",
+     "url": "https://cdn.modrinth.com/data/GcWjdA9I/versions/C99LEy6r/malilib-fabric-1.21-0.21.10.jar",
+     "sha1": "e2699ef71618c54fc03c6c8b28e336603596dcef",
+     "size": 1411200,
+     "local": "shared/optimization/malilib-fabric-1.21-0.21.10.jar",
+     "optional": false
+    },
+    {
+     "path": "mods/modelfix-1.21-1.6-fabric.jar",
+     "url": "https://cdn.modrinth.com/data/QdG47OkI/versions/FUZo6yCk/modelfix-1.21-1.6-fabric.jar",
+     "sha1": "b8069f2a672abdea1112daa6d716a0e482cf61ea",
+     "size": 62761,
+     "local": "shared/optimization/modelfix-1.21-1.6-fabric.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Modelfix",
+     "description": "Fixes gaps in item models"
+    },
+    {
+     "path": "mods/placeholder-api-2.4.2+1.21.jar",
+     "url": "https://cdn.modrinth.com/data/eXts2L7r/versions/U5bhVym2/placeholder-api-2.4.2%2B1.21.jar",
+     "sha1": "aa1b9a49f9f190dfe4825c502b150817dd2998c3",
+     "size": 232325,
+     "local": "shared/optimization/placeholder-api-2.4.2+1.21.jar",
+     "optional": false
+    },
+    {
+     "path": "mods/reeses-sodium-options-fabric-1.8.3+mc1.21.4.jar",
+     "url": "https://cdn.modrinth.com/data/Bh37bMuy/versions/KoUrx3jJ/reeses-sodium-options-fabric-1.8.3%2Bmc1.21.4.jar",
+     "sha1": "c72f07a8f139f0420cbce29bd9eb29fb24db427f",
+     "size": 81067,
+     "local": "shared/optimization/reeses-sodium-options-fabric-1.8.3+mc1.21.4.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Reeses Sodium Options",
+     "description": "A nicer Video Settings screen"
+    },
+    {
+     "path": "mods/skiptransitions-1.4.0+mc1.21.jar",
+     "url": "https://cdn.modrinth.com/data/Zoz5HQjH/versions/sHBS8WVg/skiptransitions-1.4.0%2Bmc1.21.jar",
+     "sha1": "fd775a95322b8bd515f96c7cabcd425164ef442f",
+     "size": 16339,
+     "local": "shared/optimization/skiptransitions-1.4.0+mc1.21.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Skiptransitions",
+     "description": "Skips menu fade animations"
+    },
+    {
+     "path": "mods/vmp-fabric-mc1.21.1-0.2.0+beta.7.172-all.jar",
+     "url": "https://cdn.modrinth.com/data/wnEe9KBa/versions/VmlY7QTx/vmp-fabric-mc1.21.1-0.2.0%2Bbeta.7.172-all.jar",
+     "sha1": "267975777ba52a23d4423a60e9288f9ce288344e",
+     "size": 433667,
+     "local": "shared/optimization/vmp-fabric-mc1.21.1-0.2.0+beta.7.172-all.jar",
+     "optional": true,
+     "group": "Optimization mods",
+     "label": "Vmp",
+     "description": "Smoother with lots of players around"
+    },
+    {
+     "path": "resourcepacks/CHA-pack-optimized.zip",
+     "url": "https://github.com/CraftedSports/crafted-sports-launcher/releases/download/packs/CHA-pack-optimized.zip",
+     "sha1": "aa566edfdbdcca174e45945358f77d52ebef53f9",
+     "size": 71262778,
+     "local": "hockey/resourcepacks/CHA-pack-optimized.zip"
+    },
+    {
+     "path": "resourcepacks/CraftedHockeyMenus.zip",
+     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/hockey/resourcepacks/CraftedHockeyMenus.zip",
+     "sha1": "7448a7f10bc430a2a3ff9a4d84f8c685244c8a96",
+     "size": 3139015,
+     "local": "hockey/resourcepacks/CraftedHockeyMenus.zip"
+    }
+   ]
+  },
+  {
+   "id": "golf",
+   "name": "Crafted Golf",
+   "tagline": "CGA Tour - coming soon",
+   "status": "soon",
+   "minecraft": "1.21.1",
+   "theme": {
+    "accent": "#e8333b",
+    "accent2": "#1d3d7a",
+    "dark": "#0b1630",
+    "logo": "../assets/sports/golf.png",
+    "background": ""
+   },
+   "short": "Golf",
+   "version": "97d170e155",
+   "files": []
+  }
+ ]
+}
