@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' file:; img-src 'self' file: https: data:; style-src 'self' file: 'unsafe-inline'; font-src 'self' file:; script-src 'self' file:">
+<title>Crafted Sports</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- loading screen: shown until sign-in, the sports list and every image on the first screen are ready -->
+<div class="splash" id="splash">
+  <div class="sglow"></div>
+  <div class="sring"><img src="../assets/icon.png" alt=""></div>
+  <div class="sword">CRAFTED <b>SPORTS</b></div>
+  <div class="ssports"><img src="../assets/sports/hockey-128.png" alt=""><img src="../assets/sports/soccer-128.png" alt=""><img src="../assets/sports/golf-128.png" alt=""></div>
+  <div class="strack"><i></i></div>
+  <div class="sstatus" id="splashText">Warming up</div>
+  <div class="stripes"><i></i><i></i><i></i><i></i></div>
+</div>
+
+<div id="app">
+  <header class="titlebar">
+    <div class="brand"><img src="../assets/icon.png" alt=""><span>CRAFTED <b>SPORTS</b></span></div>
+    <div class="update" id="update" hidden></div>
+    <div class="win">
+      <button data-w="min" title="Minimise">&#xE921;</button>
+      <button data-w="max" title="Maximise">&#xE922;</button>
+      <button data-w="close" class="x" title="Close">&#xE8BB;</button>
+    </div>
+  </header>
+
+  <nav class="rail" id="rail"></nav>
+
+  <main class="stage" id="stage" data-view="play">
+    <div class="bg" id="bg"></div>
+    <div class="bignum" id="bignum"></div>
+    <nav class="views" id="views">
+      <button data-view="play" class="on">Play</button>
+      <button data-view="league">League</button>
+      <button data-view="web">Website</button>
+      <button data-view="profile">Locker</button>
+      <button data-view="store">Store</button>
+    </nav>
+    <section class="hero">
+      <div class="crest" id="crest"><img alt=""></div>
+      <div class="kicker" id="tagline"></div>
+      <h1 id="name"></h1>
+      <div class="meta" id="meta"></div>
+      <div class="actions">
+        <button class="play" id="play"><span class="label">PLAY</span><span class="sub" id="playSub"></span></button>
+        <button class="cancel" id="cancelPlay" hidden>Cancel</button>
+        <button class="ghost" id="openSettings" title="Settings">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3h-4l-.4 2.9a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.4 7.4 0 0 0 1.7 1L11 21h4l.4-2.9a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.5L19.4 13ZM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z"/></svg>
+        </button>
+        <button class="ghost" id="openFolder" title="Open game folder">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 6.5A1.5 1.5 0 0 1 4.5 5h4.6l2 2h8.4A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Z"/></svg>
+        </button>
+      </div>
+      <div class="progress" id="progress" hidden>
+        <div class="bar"><i id="bar"></i></div>
+        <div class="ptext" id="ptext"></div>
+      </div>
+      <div class="error" id="error" hidden></div>
+    </section>
+    <aside class="desk" id="desk">
+      <div class="dcard" id="deskTable"></div>
+      <div class="dcard" id="deskLeaders"></div>
+      <div class="news" id="news"></div>
+    </aside>
+
+    <section class="page league" id="league" hidden>
+      <div class="lhead">
+        <div><div class="kicker" id="lgKicker"></div><h2 id="lgTitle">League</h2></div>
+        <div class="lmeta"><span id="lgUpdated"></span><button class="small" id="lgRefresh">Refresh</button><button class="small" id="lgSite">Full stats on the website</button></div>
+      </div>
+      <div class="lgrid">
+        <div class="lcol">
+          <div class="board"><div class="btitle">Standings</div><div id="lgTable"></div></div>
+          <div class="board" id="lgUpBox"><div class="btitle">Coming up</div><div id="lgUpcoming"></div></div>
+        </div>
+        <div class="lcol"><div class="leaders" id="lgLeaders"></div></div>
+      </div>
+    </section>
+
+    <section class="page web" id="web" hidden>
+      <div class="wbar">
+        <div class="wsites" id="wSites"></div>
+        <div class="wnav">
+          <button class="wbtn" data-nav="back" title="Back">&#xE72B;</button>
+          <button class="wbtn" data-nav="forward" title="Forward">&#xE72A;</button>
+          <button class="wbtn" data-nav="reload" title="Reload">&#xE72C;</button>
+          <button class="wbtn" data-nav="home" title="Home">&#xE80F;</button>
+        </div>
+        <div class="waddr" id="wAddr"></div>
+        <button class="small" data-nav="external">Open in browser</button>
+      </div>
+      <div class="warea" id="wArea"><div class="wmsg" id="wMsg">Loading</div></div>
+    </section>
+
+    <div class="ticker" id="ticker"><div class="tlabel" id="tLabel">Latest</div><div class="ttrack"><div class="trun" id="tRun"></div></div></div>
+
+    <section class="page" id="profile" hidden>
+      <div class="pgrid">
+        <div class="viewer card2">
+          <canvas id="skinCanvas" width="340" height="380"></canvas>
+          <div class="vctl">
+            <button class="chip on" data-anim="walk">Walk</button><button class="chip" data-anim="idle">Idle</button><button class="chip" data-anim="spin">Spin</button>
+          </div>
+          <div class="kitrow"><span>Kit</span><div id="kitChips"></div></div>
+          <div class="kitnote" id="kitNote"></div>
+        </div>
+        <div class="pinfo">
+          <div class="phead2"><h2 id="pName"></h2><div class="pteam" id="pTeam"></div></div>
+          <div class="facts" id="pFacts"></div>
+          <div class="note" id="pNote" hidden></div>
+          <div class="lab" id="tryon" hidden>
+            <div class="labhead"><h3>Locker</h3>
+              <div class="seg" id="stanceSeg"><button class="chip on" data-stance="skater">Skater</button><button class="chip" data-stance="goalie">Goalie</button></div>
+              <div class="seg" id="roleSeg" hidden><button class="chip on" data-role="outfield">Outfield</button><button class="chip" data-role="keeper">Keeper</button></div>
+              <button class="small" id="tryReset">Reset</button></div>
+            <div class="tabs" id="labTabs"></div>
+            <div class="labhint" id="labHint" hidden></div>
+            <div class="tiles" id="labTiles"></div>
+            <div class="swatches" id="labSw" hidden></div>
+            <div class="labact" id="labAct"></div>
+          </div>
+          <h3>Equipped</h3>
+          <div class="gear" id="pGear"></div>
+          <div class="ownedrow"><span id="pOwned"></span><button class="small" id="toStore">Get more in the Store</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="store" hidden>
+      <div class="shead"><h2>Store</h2><div class="cats" id="storeCats"></div></div>
+      <div class="sgrid" id="storeGrid"></div>
+      <div class="sfoot">Items come from the Crafted Hockey store. Buying opens it in your browser (prices in CAD); enter your Minecraft name (<b id="storeWho"></b>) at checkout. Allow up to 15 minutes and relog for items to appear in-game.</div>
+    </section>
+  </main>
+
+  <footer class="dock">
+    <div class="account" id="account"></div>
+    <div class="links">
+      <button class="link" id="discord">Discord</button>
+      <button class="link" id="website">Website</button>
+      <span class="ver" id="ver"></span>
+    </div>
+  </footer>
+</div>
+
+<!-- sign in -->
+<div class="modal" id="signin" hidden>
+  <div class="card signin">
+    <img src="../assets/icon.png" alt="" class="big">
+    <h2>Welcome to Crafted Sports</h2>
+    <p>Sign in with the Microsoft account you play Minecraft on. Your password goes to Microsoft, never to us.</p>
+    <button class="ms" id="msLogin"><span class="mslogo"><i></i><i></i><i></i><i></i></span>Sign in with Microsoft</button>
+    <div class="error" id="signinError" hidden></div>
+    <button class="skip" id="skipSignin">Play through the Minecraft Launcher instead</button>
+  </div>
+</div>
+
+<!-- settings -->
+<div class="drawer" id="settings" hidden>
+  <div class="panel">
+    <div class="phead">
+      <h2 id="setTitle">Settings</h2>
+      <button class="ghost close" id="closeSettings">&#xE8BB;</button>
+    </div>
+    <div class="tabs" id="tabs">
+      <button data-tab="game" class="on">Game</button>
+      <button data-tab="mods">Mods</button>
+      <button data-tab="packs">Packs &amp; shaders</button>
+      <button data-tab="look">Launcher</button>
+    </div>
+    <div class="tab" data-tab="game">
+      <label class="row"><span>Memory <em id="memVal"></em></span><input type="range" id="mem" min="2048" step="512"></label>
+      <p class="hint">4 GB suits most PCs. More than half your PC's memory can make things slower, not faster.</p>
+      <div class="row two">
+        <label><span>Width</span><input type="number" id="width" min="640"></label>
+        <label><span>Height</span><input type="number" id="height" min="480"></label>
+      </div>
+      <label class="check"><input type="checkbox" id="fullscreen"><span>Start in fullscreen</span></label>
+      <label class="check"><input type="checkbox" id="autoJoin"><span>Join the server straight away</span></label>
+      <label class="row"><span>Java arguments <em>(advanced)</em></span><input type="text" id="javaArgs" placeholder="-XX:+UseG1GC ..."></label>
+      <div class="row btns"><button class="small" id="openLogs">Open logs</button></div>
+    </div>
+    <div class="tab" data-tab="mods" hidden>
+      <div id="optional"></div>
+      <h3>Your mods</h3>
+      <p class="hint">Mods you add stay through every update. League mods (locked) are kept up to date for you.</p>
+      <ul class="files" id="modList"></ul>
+      <div class="row btns"><button class="small" id="addMods">Add mods…</button><button class="small" id="openMods">Open mods folder</button></div>
+    </div>
+    <div class="tab" data-tab="packs" hidden>
+      <h3>Resource packs</h3>
+      <p class="hint">The league pack is always switched on, on top. Packs you add show up in Minecraft's Resource Packs screen.</p>
+      <ul class="files" id="packList"></ul>
+      <div class="row btns"><button class="small" id="addPacks">Add packs…</button><button class="small" id="openPacks">Open folder</button></div>
+      <h3>Shaders</h3>
+      <p class="hint">Needs Iris switched on (Mods tab). Pick them in-game: Options → Video Settings → Shader Packs.</p>
+      <ul class="files" id="shaderList"></ul>
+      <div class="row btns"><button class="small" id="addShaders">Add shaders…</button><button class="small" id="openShaders">Open folder</button></div>
+    </div>
+    <div class="tab" data-tab="look" hidden>
+      <h3>Colour</h3>
+      <div class="swatches" id="swatches"></div>
+      <h3>Background</h3>
+      <div class="bgchoice" id="bgchoice">
+        <button data-bg="">Sport</button>
+        <button data-bg="dark">Dark</button>
+        <button data-bg="stadium">Stadium</button>
+      </div>
+      <label class="check"><input type="checkbox" id="closeOnLaunch"><span>Hide the launcher while playing</span></label>
+      <h3>Account</h3>
+      <div class="row btns"><button class="small danger" id="logout">Sign out</button></div>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/skinview3d.bundle.js"></script>
+<script src="helmet.js"></script>
+<script src="armour.js"></script>
+<script src="cpl-kits.js"></script>
+<script src="masks-data.js"></script>
+<script src="mask.js"></script>
+<script src="rig-data.js"></script>
+<script src="rig.js"></script>
+<script src="gear.js"></script>
+<script src="soccer-locker.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

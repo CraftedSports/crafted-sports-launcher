@@ -1,0 +1,134 @@
+{
+ "wfc_home": {
+  "number": "#f4f6f8",
+  "outline": "#8cc4ef"
+ },
+ "wfc_away": {
+  "number": "#0c2647",
+  "outline": "#8cc4ef"
+ },
+ "wfc_keeper": {
+  "number": "#0c2647",
+  "outline": "#0c2647"
+ },
+ "tm2_home": {
+  "number": "#f4f6f8",
+  "outline": "#f4f6f8"
+ },
+ "tm2_away": {
+  "number": "#b91c1c",
+  "outline": "#b91c1c"
+ },
+ "tm2_keeper": {
+  "number": "#141618",
+  "outline": "#141618"
+ },
+ "tm3_home": {
+  "number": "#f4f6f8",
+  "outline": "#f4f6f8"
+ },
+ "tm3_away": {
+  "number": "#15803d",
+  "outline": "#15803d"
+ },
+ "tm3_keeper": {
+  "number": "#141618",
+  "outline": "#141618"
+ },
+ "tm4_home": {
+  "number": "#f4f6f8",
+  "outline": "#f4f6f8"
+ },
+ "tm4_away": {
+  "number": "#7c3aed",
+  "outline": "#7c3aed"
+ },
+ "tm4_keeper": {
+  "number": "#141618",
+  "outline": "#141618"
+ },
+ "cfc_home": {
+  "number": "#f4f6f8",
+  "outline": "#f4f6f8"
+ },
+ "cfc_away": {
+  "number": "#1e5aff",
+  "outline": "#1e5aff"
+ },
+ "cfc_keeper": {
+  "number": "#141618",
+  "outline": "#141618"
+ },
+ "blu_home": {
+  "number": "#f4f6f8",
+  "outline": "#f4f6f8"
+ },
+ "blu_away": {
+  "number": "#e02424",
+  "outline": "#e02424"
+ },
+ "blu_keeper": {
+  "number": "#141618",
+  "outline": "#141618"
+ },
+ "whfc_home": {
+  "number": "#dccb9c",
+  "outline": "#4b3021"
+ },
+ "whfc_away": {
+  "number": "#161515",
+  "outline": "#dccb9c"
+ },
+ "whfc_keeper": {
+  "number": "#dccb9c",
+  "outline": "#4b3021"
+ },
+ "stfc_home": {
+  "number": "#e3ab42",
+  "outline": "#141414"
+ },
+ "stfc_away": {
+  "number": "#e3ab42",
+  "outline": "#141414"
+ },
+ "stfc_keeper": {
+  "number": "#141414",
+  "outline": "#141414"
+ },
+ "dufc_home": {
+  "number": "#f2ede1",
+  "outline": "#0e2c1a"
+ },
+ "dufc_away": {
+  "number": "#36a852",
+  "outline": "#202428"
+ },
+ "dufc_keeper": {
+  "number": "#0e2c1a",
+  "outline": "#f2ede1"
+ },
+ "au_home": {
+  "number": "#f6f7fa",
+  "outline": "#f08a24"
+ },
+ "au_away": {
+  "number": "#1d4fc2",
+  "outline": "#f08a24"
+ },
+ "au_keeper": {
+  "number": "#1d4fc2",
+  "outline": "#eee4cb"
+ },
+ "kob_home": {
+  "number": "#f6f3ff",
+  "outline": "#1a1730"
+ },
+ "kob_away": {
+  "number": "#f2c230",
+  "outline": "#1d1c22"
+ },
+ "kob_keeper": {
+  "number": "#1d1c22",
+  "outline": "#f2c230"
+ }
+}

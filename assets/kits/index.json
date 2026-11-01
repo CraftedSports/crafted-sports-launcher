@@ -1,0 +1,86 @@
+{
+ "csp": {
+  "name": "Salem Menace",
+  "key": "menace",
+  "variants": [
+   "home",
+   "away"
+  ],
+  "folders": {
+   "home": "menace_base_home",
+   "away": "menace_base_away"
+  }
+ },
+ "nia": {
+  "name": "Everett Pines",
+  "key": "pines",
+  "variants": [
+   "home",
+   "away",
+   "alt"
+  ],
+  "folders": {
+   "home": "pines_base_home",
+   "away": "pines_base_away",
+   "alt": "pines_base_alts"
+  }
+ },
+ "evp": {
+  "name": "Everett Pines",
+  "key": "pines",
+  "variants": [
+   "home",
+   "away",
+   "alt"
+  ],
+  "folders": {
+   "home": "pines_base_home",
+   "away": "pines_base_away",
+   "alt": "pines_base_alts"
+  }
+ },
+ "sja": {
+  "name": "Oakland Seals",
+  "key": "seals",
+  "variants": [
+   "home",
+   "away",
+   "winter"
+  ],
+  "folders": {
+   "home": "seals_base_home",
+   "away": "seals_base_away",
+   "winter": "seals_base_winter"
+  }
+ },
+ "sfs": {
+  "name": "Rochester Steel",
+  "key": "steel",
+  "variants": [
+   "home",
+   "away",
+   "alt",
+   "winter"
+  ],
+  "folders": {
+   "home": "steel_base_home",
+   "away": "steel_base_away",
+   "alt": "steel_base_alt",
+   "winter": "steel_base_winter"
+  }
+ },
+ "qcv": {
+  "name": "Quebec City Victoire",
+  "key": "qbc",
+  "variants": [
+   "home",
+   "away",
+   "alt"
+  ],
+  "folders": {
+   "home": "qbc_base_home",
+   "away": "qbc_base_away",
+   "alt": "qbc_base_alt"
+  }
+ }
+}

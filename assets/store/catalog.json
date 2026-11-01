@@ -1,0 +1,719 @@
+{
+ "source": "https://cha.tebex.io/",
+ "items": [
+  {
+   "id": "7740231",
+   "cat": "Crafted Pass",
+   "name": "Crafted Pass",
+   "price": 1400,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/8ed6d996e901c8b18ff4f6586811c9df041c9bc8.jpg"
+  },
+  {
+   "id": "7717436",
+   "cat": "Server Ranks",
+   "name": "VIP (Lifetime)",
+   "price": 800,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/65b15b739e442925b0d106d43ac7a4d3902dad3e.png"
+  },
+  {
+   "id": "5567511",
+   "cat": "Server Ranks",
+   "name": "MVP (30 Days)",
+   "price": 800,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/3caeaed6e33007105471185228c9267aa64406db.png",
+   "sub": "subscription"
+  },
+  {
+   "id": "7364609",
+   "cat": "Server Ranks",
+   "name": "MVP (90 Days)",
+   "price": 2400,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/bd110ae159a84ce0f9f0ce11dcc3cc93e4e2b5bc.png",
+   "sub": "subscription"
+  },
+  {
+   "id": "7364610",
+   "cat": "Server Ranks",
+   "name": "MVP (180 Days)",
+   "price": 4600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/16e813dce58d0274c3156a045a9ff5c58aa4603d.png",
+   "sub": "subscription"
+  },
+  {
+   "id": "7364614",
+   "cat": "Server Ranks",
+   "name": "MVP (365 Days)",
+   "price": 9100,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/72372ecc0ad0a0e9010e51c51ac777f2c4e31fa8.png",
+   "sub": "subscription"
+  },
+  {
+   "id": "7728956",
+   "cat": "Skater Sticks",
+   "name": "Witch Broom Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/a1642d5658c8b7474473a65ac5a7451cbc4ba930.png",
+   "ending": true
+  },
+  {
+   "id": "7728957",
+   "cat": "Skater Sticks",
+   "name": "Pumpkin Skater Stick (Orange)",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/8a67c8666c114beeb354901145c1bdcf57a3282b.png",
+   "ending": true
+  },
+  {
+   "id": "7728959",
+   "cat": "Skater Sticks",
+   "name": "Pumpkin Skater Stick (Purple)",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/20064ecfc8002d890828d81051b008f710635106.png",
+   "ending": true
+  },
+  {
+   "id": "7728960",
+   "cat": "Skater Sticks",
+   "name": "Pumpkin Skater Stick (Red)",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/aab86a50ab31549476aebe6da874c93f803b9a1d.png",
+   "ending": true
+  },
+  {
+   "id": "7728961",
+   "cat": "Skater Sticks",
+   "name": "Bone Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/46cc026afb2d536c640b381d52f1fe3cde818596.png",
+   "ending": true
+  },
+  {
+   "id": "7364605",
+   "cat": "Skater Sticks",
+   "name": "Scythe Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/9193be7571254af6df10c25250670c18e4f58f23.png",
+   "ending": true
+  },
+  {
+   "id": "7729029",
+   "cat": "Skater Sticks",
+   "name": "Slime Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/83e0293f511cfdd5c6d8026751e37080ee09e88c.png"
+  },
+  {
+   "id": "7729207",
+   "cat": "Skater Sticks",
+   "name": "Wood Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/c0cfdc52b1e5ad4fd0962905090549d36f78e45a.png"
+  },
+  {
+   "id": "7729030",
+   "cat": "Skater Sticks",
+   "name": "Chicken Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/41e56f50f5d3a5090cb61a11c7598f709399b936.png"
+  },
+  {
+   "id": "7729028",
+   "cat": "Skater Sticks",
+   "name": "Brown Cow Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/15cdd0fcb00a772310481474c5b2b543c8f48202.png"
+  },
+  {
+   "id": "7729026",
+   "cat": "Skater Sticks",
+   "name": "Cow Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/faa0f6d9cfebdf18daacdaa7c8ac3b013b94a7d4.png"
+  },
+  {
+   "id": "7717432",
+   "cat": "Skater Sticks",
+   "name": "Dark Matter Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/163f868df7b6c4267eff297589d8d1618d81176b.gif"
+  },
+  {
+   "id": "7717434",
+   "cat": "Skater Sticks",
+   "name": "Lighting Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/27c0831b05a14d8fc65c4bc9a1d7ff839c9ea3a6.gif"
+  },
+  {
+   "id": "7366421",
+   "cat": "Skater Sticks",
+   "name": "Flower Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/4323ed45e80b500a0d7f02f4ad212a00ee2b1a82.gif"
+  },
+  {
+   "id": "7366530",
+   "cat": "Skater Sticks",
+   "name": "Birdoxd Toucan Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/40d2247060131baef693c00e4e39163c51a40d61.png"
+  },
+  {
+   "id": "7717429",
+   "cat": "Skater Sticks",
+   "name": "Festive Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/7ec2bb4559d7eaf744cabce0338a3e399ebcb764.png"
+  },
+  {
+   "id": "7366428",
+   "cat": "Skater Sticks",
+   "name": "Winter Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/fdb946f614eaa893f0c86c3efe91e4476d8edd5f.gif"
+  },
+  {
+   "id": "7717426",
+   "cat": "Skater Sticks",
+   "name": "Chameleon Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/ea895cf62e55959b63cd67325d2ba5a9ac2d2a3f.gif"
+  },
+  {
+   "id": "7364606",
+   "cat": "Skater Sticks",
+   "name": "GeekBob Skater Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/15751bf6da25126bc250be05e5a309f8ce6bce46.png"
+  },
+  {
+   "id": "7717450",
+   "cat": "Goalie Masks",
+   "name": "IRL Mask",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/a60dc2fab0b0b5a06919c6f1528fb60e4efce4bd.png"
+  },
+  {
+   "id": "7717451",
+   "cat": "Goalie Masks",
+   "name": "USA Mask",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/2ffd216196664f88438fee1e3f589fe5db4e7e8b.png"
+  },
+  {
+   "id": "7717452",
+   "cat": "Goalie Masks",
+   "name": "Canada Mask",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/1348cfa7d37b1884e861d83c03bae136d1085c62.png"
+  },
+  {
+   "id": "7364592",
+   "cat": "Goalie Masks",
+   "name": "Grizzly Bear Mask",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/f45afb4086ddf95aa9868463d1b081f07d6b561e.png"
+  },
+  {
+   "id": "7364665",
+   "cat": "Goalie Masks",
+   "name": "Retro Mask",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/c962a6e68c30761c1b8432114f9643f254ada9e2.png"
+  },
+  {
+   "id": "7729176",
+   "cat": "Goalie Pads",
+   "name": "Retro Pads",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/68939840eea2de3545eb957c4802ec69599f9f01.png"
+  },
+  {
+   "id": "7717488",
+   "cat": "Goalie Pads",
+   "name": "Neon Glow",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/be3669b591f6141e29b55a738e67f8d481b81d47.png"
+  },
+  {
+   "id": "7717487",
+   "cat": "Goalie Pads",
+   "name": "Retro Green",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/9e56e0577752d6e5e13786c539cdf8882d3c1e36.png"
+  },
+  {
+   "id": "7717482",
+   "cat": "Goalie Pads",
+   "name": "Midnight Purple",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/c04178e3302b06894297214ad80e788bd5b886fb.png"
+  },
+  {
+   "id": "7717479",
+   "cat": "Goalie Pads",
+   "name": "Orange and Black",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/e542703794f9b0d6e42cf7d86ae3af16029b323d.png"
+  },
+  {
+   "id": "7728969",
+   "cat": "Goalie Sticks",
+   "name": "Pumpkin Goalie Stick (Red)",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/6c48552c6d3bace87e6591489afe1ebe4294b168.png",
+   "ending": true
+  },
+  {
+   "id": "7728966",
+   "cat": "Goalie Sticks",
+   "name": "Pumpkin Goalie Stick (Purple)",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/b6f2c9a439e93dcaf88e33f600de63b0ad43036c.png",
+   "ending": true
+  },
+  {
+   "id": "7728964",
+   "cat": "Goalie Sticks",
+   "name": "Witch Broom Goalie Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/313c31185964df5c4ac17e9b7266c2e0deb9229f.png",
+   "ending": true
+  },
+  {
+   "id": "7728965",
+   "cat": "Goalie Sticks",
+   "name": "Pumpkin Goalie Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/85a99590049b2bda6f442e87e63ab11c10fee75f.png",
+   "ending": true
+  },
+  {
+   "id": "7728963",
+   "cat": "Goalie Sticks",
+   "name": "Bone Goalie Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/73da7fc14c737d6c33ccef23775edb8cb5fb3310.png",
+   "ending": true
+  },
+  {
+   "id": "7729037",
+   "cat": "Goalie Sticks",
+   "name": "Slime Goalie Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/f31e8fd294a79d4c87e572200fbe248362e31793.png"
+  },
+  {
+   "id": "7729208",
+   "cat": "Goalie Sticks",
+   "name": "Wood Goalie Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/ff9a237f9b2226b1806c7bc16ef80ebded2a6f88.png"
+  },
+  {
+   "id": "7729035",
+   "cat": "Goalie Sticks",
+   "name": "Brown Cow Goalie Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/8ce69f34f83ded7100dc3a00655df26f78bc3630.png"
+  },
+  {
+   "id": "7729033",
+   "cat": "Goalie Sticks",
+   "name": "Cow Goalie Stick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/851e916afe58a1035e89bde55f4bc3157286242a.png"
+  },
+  {
+   "id": "7717468",
+   "cat": "Celebrations",
+   "name": "Knee Slide",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/ccc0f02abe7060a9f59708b9b69efe741709b6ba.png"
+  },
+  {
+   "id": "7717464",
+   "cat": "Celebrations",
+   "name": "Stick Salute",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/edb7df4bd997a6c2a1ef963e8a06297b49c9f93f.png"
+  },
+  {
+   "id": "7717458",
+   "cat": "Celebrations",
+   "name": "Windmill",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/2f3bab16f7b2d937b8f292a5630b7f45a4838e88.png"
+  },
+  {
+   "id": "7717469",
+   "cat": "Celebrations",
+   "name": "Breadman Kick",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/f648a8cccecb210484ea730f625122d8967ed362.png"
+  },
+  {
+   "id": "7717459",
+   "cat": "Celebrations",
+   "name": "The Bow",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/506e023dafabb8db9a3c34e54a1a6a5cac47b6d5.png"
+  },
+  {
+   "id": "7717467",
+   "cat": "Celebrations",
+   "name": "Jump n Clap",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/e5d07554288599b898f17ea348af19f4a626e6ba.png"
+  },
+  {
+   "id": "7717465",
+   "cat": "Celebrations",
+   "name": "Pointer",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/0fe045b637df37ecd2169004548323f77dfdb920.png"
+  },
+  {
+   "id": "7717463",
+   "cat": "Celebrations",
+   "name": "Salute",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/8eb44f4a0b040b641821aaee6c08e1ee677a5518.png"
+  },
+  {
+   "id": "7717462",
+   "cat": "Celebrations",
+   "name": "T-Pose",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/3e592e34a4683679133c9feaa8d1feb05e289ecb.png"
+  },
+  {
+   "id": "7717461",
+   "cat": "Celebrations",
+   "name": "The Spin",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/2031a6d3657ffdbd307b3cecc1dc2850d3eac16a.png"
+  },
+  {
+   "id": "7717442",
+   "cat": "Puck Trails",
+   "name": "Soul Trail",
+   "price": 300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/6b0fa94ac2be54b4e7c8487b580b8f765a24072f.png"
+  },
+  {
+   "id": "7717443",
+   "cat": "Puck Trails",
+   "name": "Flame Trail",
+   "price": 300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/170ab3ccaae4fbbe54909c9e28216a6527fc7bde.png"
+  },
+  {
+   "id": "7717444",
+   "cat": "Puck Trails",
+   "name": "Frost Trail",
+   "price": 300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/7208d2c0baaad050270110f73e0f3654ede4bf3f.png"
+  },
+  {
+   "id": "7717445",
+   "cat": "Puck Trails",
+   "name": "Electric Trail",
+   "price": 300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/33d41665e838fc47f9de15d69a1143f6e0e3a560.png"
+  },
+  {
+   "id": "7717454",
+   "cat": "Goal Explosions",
+   "name": "Rainbow Explosion",
+   "price": 300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/387aa4c3eab5e4eb7a7c5a2cfd876faccf60ae47.png"
+  },
+  {
+   "id": "7717455",
+   "cat": "Goal Explosions",
+   "name": "Fire Explosion",
+   "price": 300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/7bbc5fdb7db5942e012875734854c201b6e62a29.png"
+  },
+  {
+   "id": "7717456",
+   "cat": "Goal Explosions",
+   "name": "Ice Explosion",
+   "price": 300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/cb07260aa05d014daa364ccef9706dbd253721b0.png"
+  },
+  {
+   "id": "7717457",
+   "cat": "Goal Explosions",
+   "name": "Classic Explosion",
+   "price": 300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/33f790cc58d9653b793b521ec0a23eecdd766b11.png"
+  },
+  {
+   "id": "7729042",
+   "cat": "Bundles",
+   "name": "Slime Sticks Bundle",
+   "price": 800,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/96c1d0860af2ecce22bf7367cb89ea3334da4376.png"
+  },
+  {
+   "id": "7729040",
+   "cat": "Bundles",
+   "name": "Brown Cow Sticks Bundle",
+   "price": 800,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/4897c2f8cae203573b44d8fb4ad453e59c0b19a7.png"
+  },
+  {
+   "id": "7729038",
+   "cat": "Bundles",
+   "name": "Cow Sticks Bundle",
+   "price": 800,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/1555f8547b700ed9c6673911978dcc6c671df2c5.png"
+  },
+  {
+   "id": "7728980",
+   "cat": "Bundles",
+   "name": "Witch Broom Sticks Bundle",
+   "price": 800,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/e261381b3eaf890eed6ae6916c680f2fc5183caa.png",
+   "ending": true
+  },
+  {
+   "id": "7728978",
+   "cat": "Bundles",
+   "name": "Bone Sticks Bundle",
+   "price": 800,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/b490fdb1e8ce06d8b62028751bf2f52695b8b9fb.png",
+   "ending": true
+  },
+  {
+   "id": "7728976",
+   "cat": "Bundles",
+   "name": "Pumpkin Sticks Bundle",
+   "price": 1300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/a5b5da4e4a70634a7d5600e5d71cd048c3b3cd53.png",
+   "ending": true
+  },
+  {
+   "id": "7724620",
+   "cat": "Franchise Mode",
+   "name": "Style Pack x5",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/d00a94162cd7ec6c5d28339867ca538742b31dbf.png"
+  },
+  {
+   "id": "7724639",
+   "cat": "Franchise Mode",
+   "name": "Impact Pack x5",
+   "price": 400,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/233e1ff68e7139c577bdf75e34e3187a0e58ce99.png"
+  },
+  {
+   "id": "7724646",
+   "cat": "Franchise Mode",
+   "name": "Stamina Refill",
+   "price": 400,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/83870913ae310aa10132b0a6abbe14cee417d08e.png"
+  },
+  {
+   "id": "7719338",
+   "cat": "Franchise Mode",
+   "name": "Reverse Retire",
+   "price": 700,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/00672c07138cf470a99b8881776bd706da93efe5.png"
+  },
+  {
+   "id": "7719310",
+   "cat": "Franchise Mode",
+   "name": "Bronze Pack x10",
+   "price": 400,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/8c0446708d7c23584445518186ad05818676ae10.png"
+  },
+  {
+   "id": "7719311",
+   "cat": "Franchise Mode",
+   "name": "Silver Pack x10",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/8d53e92e3e512220732011cccca8c23fe4c700f5.png"
+  },
+  {
+   "id": "7719312",
+   "cat": "Franchise Mode",
+   "name": "Gold Pack x5",
+   "price": 700,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/75da3d67fce4fde958404963d19bb658591257c4.png"
+  },
+  {
+   "id": "7719313",
+   "cat": "Franchise Mode",
+   "name": "Legacy Pack x5",
+   "price": 1300,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/604c1425cbd7d3d06c645675e1b5d92782956585.png"
+  },
+  {
+   "id": "7719314",
+   "cat": "Franchise Mode",
+   "name": "Special Pack x5",
+   "price": 1000,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/25c9470b0c6156ffa2f86743dc31a00031a52da8.png"
+  },
+  {
+   "id": "7719328",
+   "cat": "Franchise Mode",
+   "name": "50k Crafted Coins",
+   "price": 800,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/07173d7b2cc96b3d3815b08202e50602727f3849.png"
+  },
+  {
+   "id": "7719329",
+   "cat": "Franchise Mode",
+   "name": "30k Crafted Coins",
+   "price": 700,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/33f50956907fc55a03bd3eb7d93e9fd970485f3f.png"
+  },
+  {
+   "id": "7719330",
+   "cat": "Franchise Mode",
+   "name": "20k Crafted Coins",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/1e9dba4cae5403c69e94469087a900a316fd285a.png"
+  },
+  {
+   "id": "7721577",
+   "cat": "Training Facility Upgrades",
+   "name": "Pro Arena Upgrade",
+   "price": 700,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/883928e428ed2b4abec92f8d61d012f3647cb527.png"
+  },
+  {
+   "id": "7721576",
+   "cat": "Training Facility Upgrades",
+   "name": "Amateur Arena Upgrade",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/0ade1e9cb83b26bc6ef0ab2f995ae5c001036f7c.png"
+  },
+  {
+   "id": "7721575",
+   "cat": "Training Facility Upgrades",
+   "name": "Arena Customization",
+   "price": 700,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/17218305d13a6d8f5a4866525096e5523f5b14e5.png"
+  },
+  {
+   "id": "7717478",
+   "cat": "Goalie Gear",
+   "name": "Retro Green",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/f661266eda7df8f514dc331274b702245b06c40a.png"
+  },
+  {
+   "id": "7717489",
+   "cat": "Goalie Gear",
+   "name": "Neon Glow",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/5ee096153e9fd263f380e6687e9969b835e45120.png"
+  },
+  {
+   "id": "7717483",
+   "cat": "Goalie Gear",
+   "name": "Midnight Purple",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/5d5dc224251bb56fc45fc629bef90e504c12a983.png"
+  },
+  {
+   "id": "7717481",
+   "cat": "Goalie Gear",
+   "name": "Orange and Black",
+   "price": 600,
+   "cur": "CAD",
+   "img": "https://dunb17ur4ymx4.cloudfront.net/packages/images/15069b562ff36de330e1694c3f4c08d01ece0f0c.png"
+  }
+ ]
+}
