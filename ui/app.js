@@ -714,7 +714,7 @@ async function loadSocLoadout() {
   socState.saved = r.loadout || {};
   const s = socState.saved;
   Object.assign(socState, { ball: socEquipped('ball'), boots: socEquipped('boots'), gloves: socEquipped('gloves'), trail: socEquipped('trail'),
-    explosion: socEquipped('explosion'), bootColour: s.boot_colour ? '#' + s.boot_colour : null, msg: '' });
+    explosion: socEquipped('explosion'), celly: socEquipped('celebration'), bootColour: s.boot_colour ? '#' + s.boot_colour : null, msg: '' });
   renderSoccerLab(); if (viewer?.skinTexture && lockerSport === 'soccer') await refreshLook();
 }
 async function socSave(changes, label) {
@@ -789,20 +789,50 @@ function renderSoccerLab() {
   };
   const act = (label, f) => { const b = el('button', 'small'); b.textContent = label; b.onclick = f; $('labAct').append(b); };
   const v = viewer, tab = socState.tab;
-  const equip = (slot, id, name) => { if (socEquipped(slot) !== id) socSave({ [slot]: id }, name + ' equipped'); };
-  if (tab === 'Ball') for (const b of L.BALLS) tile('ball', b, socState.ball === b.id, () => { socState.ball = b.id; v && L.setBall(v, b.id); renderSoccerLab(); equip('ball', b.id, b.name); });
+  // Clicking a tile only tries it on (preview). Nothing is saved until you press Equip.
+  const equipBtn = (isSaved, changes, label) => {
+    const b = el('button', 'small equip' + (isSaved ? ' done' : ''));
+    b.textContent = isSaved ? 'Equipped ✓' : 'Equip ' + label;
+    b.disabled = isSaved || socState.msg === 'Saving...';
+    if (!isSaved) b.onclick = () => socSave(changes, label + ' equipped');
+    $('labAct').append(b);
+  };
+  const named = (list, id) => (list.find(x => x.id === id) || {}).name || id;
+  if (tab === 'Ball') {
+    for (const b of L.BALLS) tile('ball', b, socState.ball === b.id, () => { socState.ball = b.id; v && L.setBall(v, b.id); renderSoccerLab(); });
+    equipBtn(socEquipped('ball') === socState.ball, { ball: socState.ball }, named(L.BALLS, socState.ball));
+  }
   if (tab === 'Boots') {
-    for (const b of L.BOOTS) tile('boot', b, socState.boots === b.id, () => { socState.boots = b.id; socState.bootColour = null; v && L.setBoots(v, b.id, null); renderSoccerLab(); if (socEquipped('boots') !== b.id) socSave({ boots: b.id, boot_colour: '' }, b.name + ' boots equipped'); });
+    for (const b of L.BOOTS) tile('boot', b, socState.boots === b.id, () => { socState.boots = b.id; socState.bootColour = null; v && L.setBoots(v, b.id, null); renderSoccerLab(); });
     const cur = L.BOOTS.find(b => b.id === socState.boots);
     if (cur?.colours.length) {
       const W = $('labSw'); W.hidden = false; W.innerHTML = '';
-      for (const c of cur.colours) { const s = el('button', 'sw' + ((socState.bootColour || cur.base) === c ? ' on' : '')); s.style.background = c; s.title = 'Colourway ' + c; s.onclick = () => { socState.bootColour = c; v && L.setBoots(v, cur.id, c); renderSoccerLab(); socSave({ boots: cur.id, boot_colour: c === cur.base ? '' : c.replace('#', '') }, cur.name + ' boots equipped'); }; W.append(s); }
+      for (const c of cur.colours) { const s = el('button', 'sw' + ((socState.bootColour || cur.base) === c ? ' on' : '')); s.style.background = c; s.title = 'Colourway ' + c; s.onclick = () => { socState.bootColour = c; v && L.setBoots(v, cur.id, c); renderSoccerLab(); }; W.append(s); }
     }
+    const colour = cur && socState.bootColour && socState.bootColour !== cur.base ? socState.bootColour.replace('#', '').toLowerCase() : '';
+    equipBtn(socEquipped('boots') === socState.boots && String(socState.saved.boot_colour || '').toLowerCase() === colour,
+      { boots: socState.boots, boot_colour: colour }, named(L.BOOTS, socState.boots) + ' boots');
   }
-  if (tab === 'Keeper Gloves') for (const g of L.GLOVES) tile('glove', g, socState.gloves === g.id, () => { socState.gloves = g.id; v && socKeeper() && L.setGloves(v, g.id); renderSoccerLab(); equip('gloves', g.id, g.name + ' gloves'); });
-  if (tab === 'Ball Trail') { for (const t of L.TRAILS) tile('fx', t, socState.trail === t.id, () => { socState.trail = t.id; renderSoccerLab(); socRun(d => L.kick(v, t.id, d)); equip('trail', t.id, t.name + ' trail'); }); act('Shoot again', () => socRun(d => L.kick(v, socState.trail, d))); }
-  if (tab === 'Goal Explosion') { for (const e of L.EXPLOSIONS) tile('burst', e, socState.explosion === e.id, () => { socState.explosion = e.id; renderSoccerLab(); socRun(d => L.shootAtGoal(v, socState.trail, e.id, d)); equip('explosion', e.id, e.name + ' goal explosion'); }); act('Score again', () => socRun(d => L.shootAtGoal(v, socState.trail, socState.explosion, d))); }
-  if (tab === 'Celebration') for (const c of L.CELLYS) tile('celly', c, socEquipped('celebration') === c.id, () => { socRun(d => L.celebrate(v, c.id, d)); equip('celebration', c.id, c.name); });
+  if (tab === 'Keeper Gloves') {
+    for (const g of L.GLOVES) tile('glove', g, socState.gloves === g.id, () => { socState.gloves = g.id; v && socKeeper() && L.setGloves(v, g.id); renderSoccerLab(); });
+    equipBtn(socEquipped('gloves') === socState.gloves, { gloves: socState.gloves }, named(L.GLOVES, socState.gloves) + ' gloves');
+  }
+  if (tab === 'Ball Trail') {
+    for (const t of L.TRAILS) tile('fx', t, socState.trail === t.id, () => { socState.trail = t.id; renderSoccerLab(); socRun(d => L.kick(v, t.id, d)); });
+    equipBtn(socEquipped('trail') === socState.trail, { trail: socState.trail }, named(L.TRAILS, socState.trail) + ' trail');
+    act('Shoot again', () => socRun(d => L.kick(v, socState.trail, d)));
+  }
+  if (tab === 'Goal Explosion') {
+    for (const e of L.EXPLOSIONS) tile('burst', e, socState.explosion === e.id, () => { socState.explosion = e.id; renderSoccerLab(); socRun(d => L.shootAtGoal(v, socState.trail, e.id, d)); });
+    equipBtn(socEquipped('explosion') === socState.explosion, { explosion: socState.explosion }, named(L.EXPLOSIONS, socState.explosion) + ' goal explosion');
+    act('Score again', () => socRun(d => L.shootAtGoal(v, socState.trail, socState.explosion, d)));
+  }
+  if (tab === 'Celebration') {
+    socState.celly = socState.celly || socEquipped('celebration');
+    for (const c of L.CELLYS) tile('celly', c, socState.celly === c.id, () => { socState.celly = c.id; renderSoccerLab(); socRun(d => L.celebrate(v, c.id, d)); });
+    equipBtn(socEquipped('celebration') === socState.celly, { celebration: socState.celly }, named(L.CELLYS, socState.celly));
+    act('Play again', () => socRun(d => L.celebrate(v, socState.celly, d)));
+  }
   if (tab === 'Skill Moves') {
     for (const s of L.SKILLS) tile('skill', s, socState.skill === s.id, () => { socState.skill = s.id; renderSoccerLab(); socRun(d => L.skill(v, s.id, socState.trail, d)); });
     const cur = L.SKILLS.find(s => s.id === socState.skill);

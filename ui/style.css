@@ -604,3 +604,8 @@ h1 { font-weight: 700; }
 @media (max-height: 700px) { .play { padding: 9px 22px 10px 18px; } .play .label { font-size: 26px; } }
 /* photo backgrounds: let the stadium show through more */
 .bg.image::after { background: linear-gradient(90deg, rgba(8,9,12,.86) 0%, rgba(8,9,12,.4) 50%, rgba(8,9,12,.72) 100%), linear-gradient(0deg, rgba(8,9,12,.85), transparent 32%); }
+
+/* Locker: the Equip button (tiles only preview; this saves) */
+.labact .small.equip { border-color: var(--accent); color: #fff; }
+.labact .small.equip:not(.done):hover { background: var(--accent); color: #111; }
+.labact .small.equip.done { opacity: .6; cursor: default; border-color: var(--edge2); }

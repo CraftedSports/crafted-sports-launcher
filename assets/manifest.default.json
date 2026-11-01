@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T20:55:32.538Z",
+ "generated": "2026-11-01T21:26:29.738Z",
  "news": [
   {
    "title": "Welcome to the Crafted Sports launcher",
@@ -52,7 +52,7 @@
     "website": "https://craftedpremier.com"
    },
    "short": "Soccer",
-   "version": "5e7e95639f",
+   "version": "ba7a8f3a22",
    "files": [
     {
      "path": "mods/Boxlib-fabric-14.4.2.jar",
@@ -90,11 +90,11 @@
      "local": "soccer/required/cloth-config-15.0.140-fabric.jar"
     },
     {
-     "path": "mods/cpl-client-0.7.2.jar",
-     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/soccer/required/cpl-client-0.7.2.jar",
-     "sha1": "f79ce80640e1a15ee2f49ab2a6e175d0c1d609ad",
-     "size": 1590973,
-     "local": "soccer/required/cpl-client-0.7.2.jar"
+     "path": "mods/cpl-client-0.7.3.jar",
+     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/soccer/required/cpl-client-0.7.3.jar",
+     "sha1": "5cb6350e67c4f32752ce7f9d5bc884f35de54bc9",
+     "size": 1591031,
+     "local": "soccer/required/cpl-client-0.7.3.jar"
     },
     {
      "path": "mods/entity_model_features_1.21-fabric-3.0.12.jar",
