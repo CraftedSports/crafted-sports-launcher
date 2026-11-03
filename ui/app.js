@@ -73,7 +73,7 @@ function renderAccount() {
   } else {
     const b = el('button', 'signbtn', 'Sign in');
     b.onclick = showSignIn;
-    a.append(b, el('div', 'who', `<b>Not signed in</b><span>Play opens the Minecraft Launcher</span>`));
+    a.append(b, el('div', 'who', `<b>Not signed in</b><span>Sign in with Microsoft to play</span>`));
   }
 }
 
@@ -97,12 +97,13 @@ $('msLogin').onclick = async () => {
     renderAccount();
   } else {
     $('signinError').textContent = /403|refused/.test(r.error)
-      ? "Crafted Sports sign-in isn't switched on yet (waiting on Mojang). You can still play - press \"Play through the Minecraft Launcher\" below."
+      ? "Microsoft refused the sign-in (403). Make sure this Microsoft account owns Minecraft: Java Edition, then try again."
       : r.error;
     $('signinError').hidden = false;
   }
 };
-$('skipSignin').onclick = async () => { S.global = await cs.globalSettings({ skippedSignIn: true }); $('signin').hidden = true; };
+// The old "Play through the Minecraft Launcher instead" button is gone: everyone plays through this launcher now.
+if ($('skipSignin')) $('skipSignin').hidden = true;
 $('signin').onclick = e => { if (e.target === $('signin')) $('signin').hidden = true; };
 
 // ── sports ──────────────────────────────────────────────────────────────
@@ -181,7 +182,7 @@ function updatePlay() {
   p.disabled = soon || S.busy || S.running;
   p.querySelector('.label').textContent = soon ? 'SOON' : S.running ? 'PLAYING' : S.busy ? 'GETTING READY' : 'PLAY';
   $('playSub').textContent = soon ? 'Not out yet' : S.running ? 'Game is running' : !i.installedVersion ? 'Installs the first time' : i.installedVersion !== i.version ? 'Updates first'
-    : !S.account ? 'Opens in the Minecraft Launcher' : (i.settings.autoJoin && i.server?.address ? 'Straight into the server' : 'Ready');
+    : !S.account ? 'Sign in to play' : (i.settings.autoJoin && i.server?.address ? 'Straight into the server' : 'Ready');
   $('openSettings').disabled = soon;
   $('openFolder').disabled = soon;
   const c = $('cancelPlay');
@@ -216,6 +217,14 @@ $('cancelPlay').onclick = async () => {
 $('play').onclick = async () => {
   const i = inst();
   if (!i || S.busy || S.running) return;
+  // Always play through this launcher: never hand over to the vanilla Minecraft Launcher. If the saved sign-in is
+  // still being checked (Play pressed right after opening), wait for it; if there's no sign-in, ask for one.
+  if (!S.account && !S.accountChecked) {
+    $('playSub').textContent = 'Signing in...';
+    await new Promise(res => { const t0 = Date.now(); const iv = setInterval(() => { if (S.account || S.accountChecked || Date.now() - t0 > 10000) { clearInterval(iv); res(); } }, 150); });
+    updatePlay();
+  }
+  if (!S.account) { showSignIn(); return; }
   S.busy = true;
   $('error').hidden = true;
   updatePlay();
@@ -240,7 +249,11 @@ $('play').onclick = async () => {
   updatePlay();
 };
 
-cs.on('account', acct => { if (acct) { S.account = acct; S.profile = null; renderAccount(); if (!$('profile').hidden) openProfile(); } else if (!S.account && !S.global.skippedSignIn) showSignIn(); });
+cs.on('account', acct => {
+  S.accountChecked = true;
+  if (acct) { S.account = acct; S.profile = null; renderAccount(); updatePlay(); if (!$('profile').hidden) openProfile(); }
+  else if (!S.account) showSignIn();
+});
 cs.on('instances', r => { if (S.busy || S.running) return; S.instances = r.list; $('ver').textContent = 'v' + S.version + (r.offline ? ' · offline' : ''); renderRail(); renderHero(); });
 cs.on('progress', p => {
   if (!p) { $('progress').hidden = true; return; }
