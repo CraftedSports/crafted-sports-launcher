@@ -227,6 +227,7 @@ $('play').onclick = async () => {
   } else if (!r.ok) {
     $('error').textContent = r.error;
     $('error').hidden = false;
+    if (r.signIn) showSignIn();
   } else {
     i.installedVersion = i.version;
     if (r.via === 'launcher') {
@@ -258,6 +259,34 @@ cs.on('game', g => {
     $('seeLogs').onclick = e => { e.preventDefault(); cs.logs(S.current); };
   }
   renderHero();
+});
+
+// the game crashed: offer to send the crash report (or say it was sent automatically)
+cs.on('crash', c => {
+  const box = $('error');
+  box.className = 'error';
+  box.hidden = false;
+  if (c.sent) {
+    box.innerHTML = `The game crashed <span class="muted">(${esc(c.signature)})</span>. A crash report was sent - thanks! <a href="#" id="seeLogs">Open the logs</a>`;
+    $('seeLogs').onclick = e => { e.preventDefault(); cs.logs(S.current); };
+    return;
+  }
+  box.innerHTML = `<b>The game crashed.</b> <span class="muted">${esc(c.signature)}</span><br>
+    Send us the crash report so we can fix it? It includes your game logs and mod list (no passwords).<br>
+    <input id="crashNote" maxlength="300" placeholder="What were you doing? (optional)" style="width:100%;margin:6px 0">
+    <button class="small" id="crashSend">Send crash report</button>
+    <label class="check" style="display:inline-flex;margin-left:8px"><input type="checkbox" id="crashAlways"><span>Always send</span></label>
+    <a href="#" id="seeLogs" style="margin-left:8px">Open the logs</a> · <a href="#" id="crashNo">No thanks</a>`;
+  $('seeLogs').onclick = e => { e.preventDefault(); cs.logs(S.current); };
+  $('crashNo').onclick = e => { e.preventDefault(); cs.dismissCrash(); box.hidden = true; };
+  $('crashSend').onclick = async () => {
+    $('crashSend').disabled = true;
+    $('crashSend').textContent = 'Sending...';
+    if ($('crashAlways').checked) S.global = await cs.globalSettings({ autoCrashReports: true });
+    const r = await cs.sendCrash($('crashNote').value.trim());
+    box.innerHTML = r.ok ? 'Crash report sent - thanks! We\'ll look into it.' : `Couldn't send the report: ${esc(r.error)}`;
+    if (r.ok) setTimeout(() => { box.hidden = true; }, 8000);
+  };
 });
 
 cs.on('update', u => {
@@ -364,6 +393,7 @@ function openSettings() {
     b.onclick = async () => { S.global = await cs.globalSettings({ background: b.dataset.bg }); openSettings(); renderHero(); };
   }
   $('closeOnLaunch').checked = S.global.closeOnLaunch !== false;
+  $('autoCrash').checked = !!S.global.autoCrashReports;
   $('settings').hidden = false;
 }
 
@@ -380,6 +410,7 @@ $('fullscreen').onchange = () => saveInstance({ fullscreen: $('fullscreen').chec
 $('autoJoin').onchange = () => saveInstance({ autoJoin: $('autoJoin').checked });
 $('javaArgs').onchange = () => saveInstance({ javaArgs: $('javaArgs').value.trim() });
 $('closeOnLaunch').onchange = async () => { S.global = await cs.globalSettings({ closeOnLaunch: $('closeOnLaunch').checked }); };
+$('autoCrash').onchange = async () => { S.global = await cs.globalSettings({ autoCrashReports: $('autoCrash').checked }); };
 $('openLogs').onclick = () => cs.logs(S.current);
 $('logout').onclick = async () => { await cs.logout(); S.account = null; renderAccount(); $('settings').hidden = true; showSignIn(); };
 
@@ -687,7 +718,7 @@ const socState = { tab: 'Ball', ball: 'classic', boots: 'standard', bootColour: 
 const SOC_TABS = ['Ball', 'Boots', 'Keeper Gloves', 'Ball Trail', 'Goal Explosion', 'Celebration', 'Skill Moves'];
 const SOC_HINTS = {
   'Ball': 'Practice balls from /ball, scrimmage balls (yours on kickoff or after you score) and club team balls.',
-  'Boots': 'Club kits come with standard black boots. Pick a boot, then a colourway.',
+  'Boots': 'Club kits come with standard black boots. Pick a boot, then a colourway (colourways are an MVP perk - in game they only show for MVPs).',
   'Keeper Gloves': 'Worn while you\u2019re in goal.',
   'Ball Trail': 'Shows behind your shots in scrimmages and training. Pick one to see a shot.',
   'Goal Explosion': 'Bursts in the net when you score. Pick one to see a goal.',
