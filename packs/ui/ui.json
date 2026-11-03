@@ -1,13 +1,13 @@
 {
- "version": "6158cf3a7497910c",
- "appVersion": "1.2.2",
- "time": 1793741787229,
- "base": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/8ef477b2701b65f6409e3347e3a2c3d52df76eb4/",
+ "version": "2f7dc7528e63b474",
+ "appVersion": "1.2.3",
+ "time": 1793742415939,
+ "base": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/ca35a01f7c1fc180fad97d2845be281fce65f784/",
  "files": [
   {
    "path": "ui/app.js",
-   "sha256": "7e62a9a3600d7a78e4881c63d805d61467320aaa20b5456fe502f8c5d51ad4f5",
-   "size": 72395
+   "sha256": "4f9efc2f65ee93523c6072d0261477acb5bafc3e2b7267e81afe22e7778fa5f8",
+   "size": 72976
   },
   {
    "path": "ui/armour.js",
@@ -31,8 +31,8 @@
   },
   {
    "path": "ui/index.html",
-   "sha256": "a1afde16dec0482096ac76242122b3222b2984a15f918cb8c8cff207a018a957",
-   "size": 11957
+   "sha256": "8a29a96145031b805687049408d8d6846417f586f67cde9c8515431d3c40a8be",
+   "size": 11964
   },
   {
    "path": "ui/mask.js",
