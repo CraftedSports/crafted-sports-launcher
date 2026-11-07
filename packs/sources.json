@@ -118,6 +118,11 @@
           "to": "mods"
         },
         {
+          "local": "hockey/config/rrls.toml",
+          "path": "config/rrls.toml",
+          "_note": "Show the normal loading screen at startup so nobody joins before the game has loaded (that crashes). Pack reloads stay hidden."
+        },
+        {
           "dir": "shared/optimization",
           "to": "mods",
           "optional": true,
