@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T02:01:05.652Z",
+ "generated": "2026-11-10T05:32:33.440Z",
  "news": [
   {
    "title": "Welcome to the Crafted Sports launcher",
@@ -52,7 +52,7 @@
     "website": "https://craftedpremier.com"
    },
    "short": "Soccer",
-   "version": "ba7a8f3a22",
+   "version": "a33fd9f3bc",
    "files": [
     {
      "path": "mods/Boxlib-fabric-14.4.2.jar",
@@ -90,11 +90,11 @@
      "local": "soccer/required/cloth-config-15.0.140-fabric.jar"
     },
     {
-     "path": "mods/cpl-client-0.7.3.jar",
-     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/soccer/required/cpl-client-0.7.3.jar",
-     "sha1": "5cb6350e67c4f32752ce7f9d5bc884f35de54bc9",
-     "size": 1591031,
-     "local": "soccer/required/cpl-client-0.7.3.jar"
+     "path": "mods/cpl-client-0.9.0.jar",
+     "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/soccer/required/cpl-client-0.9.0.jar",
+     "sha1": "9d089e350178515ed680c7aefe218187c92fbc13",
+     "size": 1693239,
+     "local": "soccer/required/cpl-client-0.9.0.jar"
     },
     {
      "path": "mods/entity_model_features_1.21-fabric-3.0.12.jar",
@@ -394,7 +394,7 @@
     "website": "https://craftedhockey.com"
    },
    "short": "Hockey",
-   "version": "e2cd34a275",
+   "version": "207ca2ff2c",
    "files": [
     {
      "path": "mods/Boxlib-fabric-14.4.2.jar",
@@ -699,8 +699,8 @@
     {
      "path": "resourcepacks/CHA-pack-optimized.zip",
      "url": "https://github.com/CraftedSports/crafted-sports-launcher/releases/download/packs/CHA-pack-optimized.zip",
-     "sha1": "40548d14678e250b03000ecb1fce4a9107dc57db",
-     "size": 72122289,
+     "sha1": "a9264797a6e7cdce748e8075086ba1cc4089ccb7",
+     "size": 72999719,
      "local": "hockey/resourcepacks/CHA-pack-optimized.zip"
     },
     {
