@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T21:27:58.070Z",
+ "generated": "2026-11-10T22:12:20.729Z",
  "news": [
   {
    "title": "Welcome to the Crafted Sports launcher",
@@ -52,7 +52,7 @@
     "website": "https://craftedpremier.com"
    },
    "short": "Soccer",
-   "version": "b594dd4c69",
+   "version": "048fdab87f",
    "files": [
     {
      "path": "mods/Boxlib-fabric-14.4.2.jar",
@@ -336,8 +336,8 @@
     {
      "path": "resourcepacks/CraftedSoccerPack.zip",
      "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/soccer/resourcepacks/CraftedSoccerPack.zip",
-     "sha1": "414fff1f19b096c5291efb37e91c849183e30ef3",
-     "size": 15729014,
+     "sha1": "92822f537a50992efa979034feee6605b523992a",
+     "size": 16003918,
      "local": "soccer/resourcepacks/CraftedSoccerPack.zip"
     },
     {
