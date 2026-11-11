@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T03:52:43.355Z",
+ "generated": "2026-11-11T20:39:50.102Z",
  "news": [
   {
    "title": "Welcome to the Crafted Sports launcher",
@@ -52,7 +52,7 @@
     "website": "https://craftedpremier.com"
    },
    "short": "Soccer",
-   "version": "9bd215c46c",
+   "version": "69df24099b",
    "files": [
     {
      "path": "mods/Boxlib-fabric-14.4.2.jar",
@@ -92,8 +92,8 @@
     {
      "path": "mods/cpl-client-0.9.3.jar",
      "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/soccer/required/cpl-client-0.9.3.jar",
-     "sha1": "ee43befccd3903bfbf8d455cac0019f34a88f069",
-     "size": 1779388,
+     "sha1": "cd9e2b5f4f658e93204e0092542b1f086d29f8f4",
+     "size": 1779602,
      "local": "soccer/required/cpl-client-0.9.3.jar"
     },
     {
@@ -217,17 +217,6 @@
      "group": "Optimization mods",
      "label": "Chat Heads",
      "description": "Players' heads next to their chat"
-    },
-    {
-     "path": "mods/custom-crosshair-mod-v1.6.0-fabric-mc1.21.1.jar",
-     "url": "https://cdn.modrinth.com/data/o1tyE5vJ/versions/ARFTjK92/custom-crosshair-mod-v1.6.0-fabric-mc1.21.1.jar",
-     "sha1": "b0ae501bb09e701b66e617d739119095f1a16dc3",
-     "size": 140493,
-     "local": "shared/optimization/custom-crosshair-mod-v1.6.0-fabric-mc1.21.1.jar",
-     "optional": true,
-     "group": "Optimization mods",
-     "label": "Custom Crosshair Mod",
-     "description": "Pick your own crosshair"
     },
     {
      "path": "mods/ferritecore-7.0.3-fabric.jar",

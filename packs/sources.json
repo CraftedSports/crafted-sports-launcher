@@ -56,7 +56,10 @@
             "ToadLib",
             "malilib"
           ],
-          "_note": "Every mod in this folder, on by default; players can switch any off. Libraries other mods need (listed in required) always stay."
+          "exclude": [
+            "custom-crosshair-mod"
+          ],
+          "_note": "CPL has its own crosshair (the CPL client mod), so Custom Crosshair Mod is left out of soccer. Every mod in this folder, on by default; players can switch any off. Libraries other mods need (listed in required) always stay."
         },
         {
           "local": "soccer/resourcepacks/CraftedSoccerPack.zip",
