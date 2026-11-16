@@ -70,6 +70,10 @@ function renderAccount() {
     img.src = `https://mc-heads.net/avatar/${S.account.uuid}/60`;
     img.onerror = () => { img.style.visibility = 'hidden'; };
     a.append(img, el('div', 'who', `<b>${esc(S.account.name)}</b><span>Signed in</span>`));
+    const out = el('button', 'signout', 'Sign out');
+    out.title = 'Sign out of ' + S.account.name;
+    out.onclick = signOut;
+    a.append(out);
   } else {
     const b = el('button', 'signbtn', 'Sign in');
     b.onclick = showSignIn;
@@ -425,7 +429,16 @@ $('javaArgs').onchange = () => saveInstance({ javaArgs: $('javaArgs').value.trim
 $('closeOnLaunch').onchange = async () => { S.global = await cs.globalSettings({ closeOnLaunch: $('closeOnLaunch').checked }); };
 $('autoCrash').onchange = async () => { S.global = await cs.globalSettings({ autoCrashReports: $('autoCrash').checked }); };
 $('openLogs').onclick = () => cs.logs(S.current);
-$('logout').onclick = async () => { await cs.logout(); S.account = null; renderAccount(); $('settings').hidden = true; showSignIn(); };
+async function signOut() {
+  await cs.logout();
+  S.account = null; S.profile = null;
+  try { socState.saved = {}; socState.msg = ''; } catch {}
+  renderAccount(); renderHero && renderHero();
+  $('settings').hidden = true;
+  if (!$('profile').hidden || !$('store').hidden) showView('play');
+  showSignIn();
+}
+$('logout').onclick = signOut;
 
 for (const [btn, sub, list] of [['addMods', 'mods', 'modList'], ['addPacks', 'resourcepacks', 'packList'], ['addShaders', 'shaderpacks', 'shaderList']])
   $(btn).onclick = async () => { await cs.addFiles(S.current, sub); listFiles(sub, list); };
@@ -566,11 +579,12 @@ async function showSkinNow(profile, kit) {
 const tryState = { stance: 'skater', rig: true, gear: 'none', stick: 'auto', mask: 'canada', pads: 'default', glove: 'black', blocker: true, fx: {}, tab: 'Helmet' };
 const GEAR_OPTS = ['none', 'visor_clear', 'visor_smoke', 'visor_mirror', 'visor_blue', 'visor_purple', 'visor_red', 'visor_orange', 'visor_amber', 'visor_green', 'visor_pink',
   'fishbowl_clear', 'fishbowl_smoke', 'fishbowl_mirror', 'fishbowl_blue', 'cage_black', 'cage_white', 'cage_chrome'];
-const SKATER_STICKS = ['aurora', 'birdo', 'bone', 'bronze', 'browncow', 'canada', 'chameleon', 'chicken', 'circuit', 'cow', 'crafted_gold', 'czech', 'darkmatter', 'ember', 'festive', 'finland', 'flower', 'frostbite', 'geekbob', 'germany', 'gold', 'lightning', 'mauer', 'mherwood', 'pumpkin', 'pumpkin_purple', 'pumpkin_red', 'retro', 'russia', 'scythe', 'silver', 'slime', 'sweden', 'swiss', 'usa', 'winter', 'witchbroom'];
-const GOALIE_STICKS = ['aurora', 'bone', 'browncow', 'canada', 'circuit', 'cow', 'crafted_gold', 'czech', 'ember', 'finland', 'frostbite', 'germany', 'lightning', 'mauer', 'mherwood', 'pumpkin', 'pumpkin_purple', 'pumpkin_red', 'retro', 'russia', 'slime', 'sweden', 'swiss', 'usa', 'witchbroom'];
+const SKATER_STICKS = ['aurora', 'birdo', 'bronze', 'browncow', 'canada', 'chameleon', 'chicken', 'circuit', 'cow', 'crafted_gold', 'czech', 'darkmatter', 'ember', 'festive', 'finland', 'flower', 'frostbite', 'geekbob', 'germany', 'gold', 'lightning', 'mauer', 'mherwood', 'retro', 'russia', 'scythe', 'silver', 'slime', 'sweden', 'swiss', 'usa', 'winter'];
+const GOALIE_STICKS = ['aurora', 'browncow', 'canada', 'circuit', 'cow', 'crafted_gold', 'czech', 'ember', 'finland', 'frostbite', 'germany', 'lightning', 'mauer', 'mherwood', 'retro', 'russia', 'slime', 'sweden', 'swiss', 'usa'];
 const GLOVES = ['black', 'white', 'red', 'dark_red', 'maroon', 'orange', 'yellow', 'gold', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'indigo', 'violet', 'magenta', 'pink', 'dark_tan', 'vintage', 'cancer', 'mother', 'father', 'puck'];
 const PADS = ['default', 'retro', 'pass_aurora', 'pass_circuit', 'pass_crafted_gold', 'pass_ember', 'pass_glacier', 'color_black', 'color_blue', 'color_brown', 'color_cyan', 'color_gray', 'color_green', 'color_light_blue', 'color_light_gray', 'color_lime', 'color_magenta', 'color_orange', 'color_pink', 'color_purple', 'color_red', 'color_yellow'];
 const FX_CATS = { Celebration: 'Celebrations', Explosion: 'Goal Explosions', Trail: 'Puck Trails' };
+const FX_FREE = { Trail: { key: 'none', name: 'No trail' } };
 const stickList = () => tryState.stance === 'goalie' ? GOALIE_STICKS : SKATER_STICKS;
 const stickName = () => tryState.stick === 'auto' || !stickList().includes(tryState.stick) ? 'mherwood' : tryState.stick;
 
@@ -665,8 +679,9 @@ function labItems(tab) {
   if (tab === 'Blocker') return [{ id: 'mauer', label: 'Blocker', img: `${CH}blockers/mauer.png`, on: tryState.blocker, set: async () => { tryState.blocker = true; await rebuildRig(); } },
     { id: 'none', label: 'No blocker', on: !tryState.blocker, set: async () => { tryState.blocker = false; await rebuildRig(); } }];
   if (FX_CATS[tab]) {
-    const items = (catalog || []).filter(i => i.cat === FX_CATS[tab]);
-    return items.map(i => ({ id: i.id, label: i.name, img: i.img, sub: 'Plays in game', on: tryState.fx[tab] === i.id, set: async () => { tryState.fx[tab] = tryState.fx[tab] === i.id ? null : i.id; } }));
+    const items = (catalog || []).filter(i => i.cat === FX_CATS[tab] && (i.sport || 'hockey') === 'hockey' && i.key);
+    const free = FX_FREE[tab] ? [{ id: FX_FREE[tab].key, key: FX_FREE[tab].key, name: FX_FREE[tab].name, img: null }] : [];
+    return [...free, ...items].map(i => ({ id: i.id, key: i.key, label: i.name, img: i.img, sub: 'Plays in game', on: tryState.fx[tab] === i.id, set: async () => { tryState.fx[tab] = i.id; } }));
   }
   return [];
 }
@@ -682,10 +697,77 @@ function renderLab() {
   for (const it of labItems(tryState.tab)) {
     const t = el('button', 'tile' + (it.on ? ' on' : ''));
     t.innerHTML = `<div class="tart ${it.art || ''}">${it.img ? `<img src="${esc(it.img)}" alt="">` : `<i style="background:${it.color || 'transparent'}"></i>`}</div><div class="tnm">${esc(it.label)}</div>${it.sub ? `<div class="tsub">${esc(it.sub)}</div>` : ''}`;
-    t.onclick = async () => { await lookRebuild(() => it.set()); renderLab(); };
+    t.onclick = async () => { await lookRebuild(() => it.set()); hockeyMsg = ''; renderLab(); };
+    if (hockeyIsEquipped(tryState.tab, it.key || it.id)) { t.classList.add('equipped'); const sub = t.querySelector('.tsub') || t.appendChild(el('div', 'tsub')); sub.textContent = 'Equipped'; }
     $('labTiles').append(t);
   }
+  hockeyEquipButton();
   if (FX_CATS[tryState.tab] && !catalog) cs.catalog().then(c => { catalog = c; renderLab(); }).catch(() => {});
+}
+
+// ── hockey: Equip saves the tried-on item to the player's account (cha-loadout), so it shows in game ──
+let hockeyMsg = '', hockeySaving = false;
+const flat = v => String(v ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+const MASK_SAVED = { pinesmask: 'pines', griz: 'bear' };
+/** What a Locker tab would save right now: { slot, value, label } (null = this tab can't be equipped from here). */
+function hockeyChoice(tab) {
+  const goalie = tryState.stance === 'goalie';
+  if (tab === 'Helmet') return { slot: 'helmetGear', value: tryState.gear, label: tryState.gear === 'none' ? 'no face gear' : pretty(tryState.gear) };
+  if (tab === 'Stick') return { slot: goalie ? 'goalieStick' : 'stick', value: stickName(), label: pretty(stickName()) + ' stick' };
+  if (tab === 'Mask') return tryState.mask ? { slot: 'mask', value: tryState.mask, label: pretty(tryState.mask) + ' mask' } : null;
+  if (tab === 'Pads') return { slot: 'pads', value: tryState.pads, label: pretty(tryState.pads.replace('pass_', '').replace('color_', '')) + ' pads' };
+  if (FX_CATS[tab]) {
+    const id = tryState.fx[tab]; if (!id) return null;
+    const it = labItems(tab).find(x => x.id === id); if (!it?.key) return null;
+    return { slot: { Celebration: 'celebration', Explosion: 'explosion', Trail: 'trail' }[tab], value: it.key, label: it.label };
+  }
+  return null;
+}
+function hockeySaved(slot) {
+  const eq = S.profile?.equipped || {};
+  if (slot === 'stick') return eq.stick?.name; if (slot === 'goalieStick') return eq.stick?.goalie;
+  if (slot === 'mask') { const m = eq.goalieMask?.name; return MASK_SAVED[m] || m; }
+  if (slot === 'pads') return eq.goaliePads === 'default_white' ? 'default' : eq.goaliePads;
+  return eq[slot];
+}
+const hockeySlot = tab => ({ Helmet: 'helmetGear', Stick: tryState.stance === 'goalie' ? 'goalieStick' : 'stick', Mask: 'mask', Pads: 'pads', Celebration: 'celebration', Explosion: 'explosion', Trail: 'trail' })[tab];
+function hockeyIsEquipped(tab, value) {
+  const slot = hockeySlot(tab); if (!slot) return false;
+  const saved = hockeySaved(slot);
+  if (!saved) return false;
+  return flat(saved) === flat(value) || flat(saved) === flat(String(value).replace(/^(pass|color)_/, ''));
+}
+function hockeyEquipButton() {
+  const tab = tryState.tab, c = hockeyChoice(tab);
+  const hint = $('labHint');
+  if (!S.account) { hint.hidden = false; hint.textContent = 'Sign in to equip items.'; return; }
+  if (!c) {
+    const why = tab === 'Glove' || tab === 'Blocker' ? 'Glove and blocker colours are picked in game (/cosmetics).' : FX_CATS[tab] ? 'Pick one to try it, then press Equip.' : '';
+    hint.hidden = !(hockeyMsg || why); hint.textContent = hockeyMsg || why; return;
+  }
+  const done = hockeyIsEquipped(tab, c.value);
+  const b = el('button', 'small equip' + (done ? ' done' : ''));
+  b.textContent = done ? 'Equipped ✓' : 'Equip ' + c.label;
+  b.disabled = done || hockeySaving;
+  if (!done) b.onclick = () => hockeySave(c);
+  $('labAct').append(b);
+  hint.hidden = !hockeyMsg; hint.textContent = hockeyMsg;
+}
+async function hockeySave(c) {
+  hockeySaving = true; hockeyMsg = 'Saving...'; renderLab();
+  const r = await cs.hockeyEquip(c.slot, c.value);
+  hockeySaving = false;
+  if (!r.ok) { hockeyMsg = r.error; renderLab(); return; }
+  const eq = (S.profile ||= {}).equipped ||= {};
+  const v = r.saved || {};
+  if (c.slot === 'stick') eq.stick = { ...(eq.stick || {}), name: v.stick_name || c.value };
+  else if (c.slot === 'goalieStick') eq.stick = { ...(eq.stick || {}), goalie: v.goalie_stick_name || c.value };
+  else if (c.slot === 'mask') eq.goalieMask = { ...(eq.goalieMask || {}), name: v.mask || c.value };
+  else if (c.slot === 'pads') eq.goaliePads = v.pad || c.value;
+  else eq[c.slot] = c.value;
+  hockeyMsg = c.label.charAt(0).toUpperCase() + c.label.slice(1) + ' equipped - shows in game next time you join the server.';
+  renderLab();
+  if (lockerSport === 'hockey') renderEquipped(S.profile, 'hockey');
 }
 $('tryReset').onclick = () => lockerSport === 'soccer' ? setupSoccerTry(S.profile) : setupTry(S.profile);
 const norm = v => String(typeof v === 'string' ? v : v?.name || '').toLowerCase().replace(/ /g, '_');
@@ -954,16 +1036,7 @@ async function openProfile() {
       : 'Team and cosmetics will show here once the profile service is switched on. Your skin is shown meanwhile.';
   }
   // gear: hockey cosmetics only on the hockey profile
-  const eq = sport === 'hockey' ? (p.equipped || {}) : {};
-  const rows = [];
-  for (const [key, label] of GEAR) {
-    const v = eq[key]; if (!v) continue;
-    const name = typeof v === 'string' ? v : (v.name || v.mask || '');
-    if (!name || name === 'none') continue;
-    const col = typeof v === 'object' && v.color && /^#[0-9a-f]{6}$/i.test(v.color) ? `<i class="sw" style="background:${v.color}"></i>` : '';
-    rows.push(`<div class="g"><span>${esc(label)}</span><b>${col}${esc(pretty(name))}</b></div>`);
-  }
-  $('pGear').innerHTML = rows.join('') || `<div class="g empty">${sport === 'hockey' ? 'Nothing equipped yet. The Store has sticks, masks, celebrations and more.' : sport === 'soccer' ? 'Nothing equipped yet. Try balls, boots, trails and more in the Locker above.' : ''}</div>`;
+  renderEquipped(p, sport);
   $('pOwned').textContent = sport === 'hockey' && p.owned.length ? `${p.owned.length} item${p.owned.length === 1 ? '' : 's'} owned` : '';
   // kit chips: the selected sport's kits only
   const vs = sport === 'hockey' ? (p.kits?.variants || []) : [];
@@ -977,20 +1050,40 @@ async function openProfile() {
   else { $('kitNote').textContent = sport === 'soccer' ? (p.soccer?.team ? '' : 'Join a team and your football kit shows up here.') : sport === 'hockey' ? (p.hockey?.team ? '' : 'Join a team and your jerseys show up here.') : ''; await showSkin(p, null); }
 }
 
+function renderEquipped(p, sport) {
+  const eq = sport === 'hockey' ? (p.equipped || {}) : {};
+  const rows = [];
+  for (const [key, label] of GEAR) {
+    const v = eq[key]; if (!v) continue;
+    const name = typeof v === 'string' ? v : (v.name || v.mask || '');
+    if (!name || name === 'none') continue;
+    const col = typeof v === 'object' && v.color && /^#[0-9a-f]{6}$/i.test(v.color) ? `<i class="sw" style="background:${v.color}"></i>` : '';
+    rows.push(`<div class="g"><span>${esc(label)}</span><b>${col}${esc(pretty(name))}</b></div>`);
+  }
+  $('pGear').innerHTML = rows.join('') || `<div class="g empty">${sport === 'hockey' ? 'Nothing equipped yet. The Store has sticks, masks, celebrations and more.' : sport === 'soccer' ? 'Nothing equipped yet. Try balls, boots, trails and more in the Locker above.' : ''}</div>`;
+}
+
 // store
-let catalog = null, storeCat = 'All';
+let catalog = null, storeCat = 'All', storeSport = null;
+const STORE_SPORTS = [['hockey', 'Hockey'], ['soccer', 'Soccer']];
 async function openStore() {
   $('storeWho').textContent = S.account?.name || 'sign in first';
+  storeSport = S.current === 'soccer' ? 'soccer' : 'hockey';
   if (!catalog) catalog = await cs.catalog();
   if (S.account && !S.profile) { const r = await cs.profile(); if (r.ok) S.profile = r.profile; }
   renderStore();
 }
 function renderStore() {
-  const cats = ['All', ...new Set(catalog.map(i => i.cat))];
+  if (!storeSport) storeSport = S.current === 'soccer' ? 'soccer' : 'hockey';
+  const mine = catalog.filter(i => (i.sport || 'hockey') === storeSport || i.sport === 'all');
+  const cats = ['All', ...new Set(mine.map(i => i.cat))];
+  if (!cats.includes(storeCat)) storeCat = 'All';
   $('storeCats').innerHTML = '';
+  for (const [id, name] of STORE_SPORTS) { const b = el('button', 'chip sportpick' + (id === storeSport ? ' on' : ''), name); b.onclick = () => { storeSport = id; storeCat = 'All'; renderStore(); }; $('storeCats').append(b); }
+  $('storeCats').append(el('span', 'catsep'));
   for (const c of cats) { const b = el('button', 'chip' + (c === storeCat ? ' on' : ''), esc(c)); b.onclick = () => { storeCat = c; renderStore(); }; $('storeCats').append(b); }
   $('storeGrid').innerHTML = '';
-  for (const i of catalog.filter(i => storeCat === 'All' || i.cat === storeCat)) {
+  for (const i of mine.filter(i => storeCat === 'All' || i.cat === storeCat)) {
     const hue = [...i.id].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 360, 7);
     const card = el('div', 'item');
     card.innerHTML = `<div class="art img" style="--h:${hue}"><img src="${esc(i.img)}" alt=""><em>${esc(i.cat)}${i.ending ? ' · ending soon' : ''}</em></div>
