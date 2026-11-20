@@ -1,5 +1,6 @@
 node_modules/
 dist/
+dist-release/
 build-log.txt
 
 packs/hockey/resourcepacks/CHA-pack-optimized.zip

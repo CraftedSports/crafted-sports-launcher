@@ -21,7 +21,7 @@
       },
       "server": {
         "name": "Crafted Premier League",
-        "address": "212.192.29.30:25525"
+        "address": "212.192.28.160:25569"
       },
       "memory": 4096,
       "theme": {
