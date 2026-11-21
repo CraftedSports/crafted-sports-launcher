@@ -1,13 +1,13 @@
 {
- "version": "1628cfc09418d162",
- "appVersion": "1.2.9",
- "time": 1795213926956,
- "base": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/48893e000bcc75e8f9fcbcfbb1197a98b3d9f9b6/",
+ "version": "cb7a54a9fe94892e",
+ "appVersion": "1.2.11",
+ "time": 1795222198022,
+ "base": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/b71910d2093e164d37429f5f120c8772b9ed1835/",
  "files": [
   {
    "path": "ui/app.js",
-   "sha256": "49ad897f7054d033856dfe5d35a8fd3b75930d9ead3f510aa5171a06602c967a",
-   "size": 78315
+   "sha256": "d7bb8cd887ae8c8124771f11cc994fc5d8ee3dbc9df87bff9c23b5f3c53e9b5c",
+   "size": 80384
   },
   {
    "path": "ui/armour.js",
@@ -31,8 +31,8 @@
   },
   {
    "path": "ui/index.html",
-   "sha256": "9222712331206e8dc8fdc6188b74d5dee64d6b7fd9c517d5f46fca2bfebb9dac",
-   "size": 12010
+   "sha256": "8cb4f75a47c98e144737228aabfbd8e98f380f42460c6ad6c4673ab5c6308342",
+   "size": 12124
   },
   {
    "path": "ui/mask.js",
@@ -61,8 +61,8 @@
   },
   {
    "path": "ui/style.css",
-   "sha256": "08aa0aca96f8eead20d6716020f7bdd8ca2f53f88d388d93c6255f076a64d414",
-   "size": 51262
+   "sha256": "dc6e8257d57bf69b88bc77ff19c88a7327beb2e77adfe9692c9bf5637e5e254a",
+   "size": 52037
   },
   {
    "path": "ui/vendor/skinview3d.bundle.js",
