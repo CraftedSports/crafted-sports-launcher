@@ -58,6 +58,39 @@ async function start() {
   // (the sign-in prompt, if needed, comes once the background sign-in check reports back)
   // refresh the instances now and then (new version published)
   setInterval(async () => { if (S.busy || S.running) return; const r = await cs.refresh(); S.instances = r.instances; renderRail(); renderHero(); }, 10 * 60 * 1000);
+  // how many people are on each server, every 30 s
+  pollCounts();
+  setInterval(pollCounts, 30 * 1000);
+}
+
+// ── live player counts ──────────────────────────────────────────────────
+
+const COUNTS = {};   // server address -> { online, players, max, ms, sample }
+const countFor = i => (i && i.status !== 'soon' && i.server?.address ? COUNTS[i.server.address] : null);
+async function pollCounts() {
+  if (!cs.serverStatus || document.hidden) return;   // older app builds don't have it
+  const addrs = S.instances.filter(i => i.status !== 'soon' && i.server?.address).map(i => i.server.address);
+  if (!addrs.length) return;
+  try { Object.assign(COUNTS, await cs.serverStatus(addrs)); } catch { return; }
+  paintCounts();
+}
+document.addEventListener('visibilitychange', () => { if (!document.hidden) pollCounts(); });
+function paintCounts() {
+  for (const b of document.querySelectorAll('.sport[data-id]')) {
+    const c = countFor(S.instances.find(x => x.id === b.dataset.id));
+    let n = b.querySelector('.pc');
+    if (!c) { if (n) n.remove(); continue; }
+    if (!n) { n = el('span', 'pc'); b.append(n); }
+    n.className = 'pc' + (c.online ? (c.players ? ' live' : '') : ' off');
+    n.innerHTML = c.online ? `<i></i>${c.players}` : 'OFF';
+  }
+  const i = inst(), c = countFor(i), m = $('srvMeta'), h = $('srvCount');
+  if (!m || !h) return;
+  m.classList.toggle('off', !!c && !c.online);
+  if (!c) { h.textContent = ''; m.title = ''; return; }
+  if (!c.online) { h.textContent = 'offline'; m.title = 'The server is not answering right now'; return; }
+  h.textContent = `${c.players}${c.max ? ' / ' + c.max : ''} online`;
+  m.title = c.sample && c.sample.length ? 'On now: ' + c.sample.join(', ') + (c.players > c.sample.length ? ` and ${c.players - c.sample.length} more` : '') : (c.players ? '' : 'Nobody on right now');
 }
 
 // ── account ─────────────────────────────────────────────────────────────
@@ -118,6 +151,7 @@ function renderRail() {
   for (const i of S.instances) {
     const b = el('button', 'sport' + (i.status === 'soon' ? ' soon' : '') + (i.theme.logoPlate ? ' plate' : '') + (S.current === i.id ? ' on' : ''));
     b.style.setProperty('--c', i.theme.accent || '#fff');
+    b.dataset.id = i.id;
     const img = el('img');
     img.src = i.theme.logo || '../assets/icon.png';
     b.append(img, el('span', 'tip', esc(i.short || i.name.replace(/^Crafted\s+/i, '')) + (i.status === 'soon' ? ' · soon' : '')));
@@ -125,6 +159,7 @@ function renderRail() {
     b.onclick = () => select(i.id);
     rail.append(b);
   }
+  paintCounts();
 }
 
 function inst() {
@@ -169,11 +204,12 @@ function renderHero() {
   if (i.status === 'soon') meta.push('Coming soon');
   else {
     if (i.season) meta.push(`<span class="season">${esc(i.season.label || 'Season ' + i.season.number)}</span>`);
-    if (i.server?.name) meta.push(`<span><i class="dot"></i>${esc(i.server.name)}</span>`);
+    if (i.server?.name) meta.push(`<span class="srv" id="srvMeta"><i class="dot"></i>${esc(i.server.name)}<b class="pcount" id="srvCount"></b></span>`);
     meta.push(`<span>Minecraft ${esc(i.minecraft)}</span>`);
     meta.push(`<span>${i.installedVersion ? (i.installedVersion === i.version ? 'Up to date' : 'Update ready') : 'Not installed yet'}</span>`);
   }
   $('meta').innerHTML = meta.join('');
+  paintCounts();
   updatePlay();
   $('error').hidden = true;
 }
@@ -258,7 +294,7 @@ cs.on('account', acct => {
   if (acct) { S.account = acct; S.profile = null; renderAccount(); updatePlay(); if (!$('profile').hidden) openProfile(); }
   else if (!S.account) showSignIn();
 });
-cs.on('instances', r => { if (S.busy || S.running) return; S.instances = r.list; $('ver').textContent = 'v' + S.version + (r.offline ? ' · offline' : ''); renderRail(); renderHero(); });
+cs.on('instances', r => { if (S.busy || S.running) return; S.instances = r.list; $('ver').textContent = 'v' + S.version + (r.offline ? ' · offline' : ''); renderRail(); renderHero(); pollCounts(); });
 cs.on('progress', p => {
   if (!p) { $('progress').hidden = true; return; }
   $('progress').hidden = false;
