@@ -1,8 +1,8 @@
 {
  "version": "cb7a54a9fe94892e",
  "appVersion": "1.2.11",
- "time": 1795332328061,
- "base": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/d07201b20a55051bb4301d5438b3417c118c5c12/",
+ "time": 1795472421194,
+ "base": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/3f6a11f02aa811f95e848291113d0562a5a5ece4/",
  "files": [
   {
    "path": "ui/app.js",
