@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T07:25:23.248Z",
+ "generated": "2026-11-23T22:20:15.810Z",
  "news": [
   {
    "title": "Welcome to the Crafted Sports launcher",
@@ -383,7 +383,7 @@
     "website": "https://craftedhockey.com"
    },
    "short": "Hockey",
-   "version": "26b0ff96b7",
+   "version": "8a753d051e",
    "files": [
     {
      "path": "mods/Boxlib-fabric-14.4.2.jar",
@@ -409,8 +409,8 @@
     {
      "path": "mods/cha-client-1.0.9.jar",
      "url": "https://raw.githubusercontent.com/CraftedSports/crafted-sports-launcher/main/packs/hockey/required/cha-client-1.0.9.jar",
-     "sha1": "3ad20b074dc4457a6aefc22b0f9fd720fe4e5201",
-     "size": 374308,
+     "sha1": "6023c6e0e34ce9de8dcb9d8c66d6622921e5afe8",
+     "size": 455413,
      "local": "hockey/required/cha-client-1.0.9.jar"
     },
     {
@@ -688,8 +688,8 @@
     {
      "path": "resourcepacks/CHA-pack-optimized.zip",
      "url": "https://github.com/CraftedSports/crafted-sports-launcher/releases/download/packs/CHA-pack-optimized.zip",
-     "sha1": "b07ba713935127bbe7eaa91f0d349d073947f4a2",
-     "size": 69247359,
+     "sha1": "38c6dda898fde5d122909945c68bd75b04b97d8f",
+     "size": 69306407,
      "local": "hockey/resourcepacks/CHA-pack-optimized.zip"
     },
     {
